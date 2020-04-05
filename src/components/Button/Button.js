@@ -23,9 +23,8 @@ const Button = styled.button`
     css`
       background: black;
       color: white;
-
-
-`}
+      
+     `}
  
 `;
 
