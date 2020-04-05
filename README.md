@@ -1,6 +1,6 @@
 
 
-###Wykorzystane technologie z npm package
+### Wykorzystane technologie z npm package
 
 > `styled-components` </br>
 > `node-sass`
@@ -10,7 +10,7 @@
 
 Strona postawiona na frameworku React.
 
-##Dostępne komendy:
+## Dostępne komendy:
 
 ### `npm start`
 
