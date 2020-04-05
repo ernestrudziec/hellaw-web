@@ -6,6 +6,7 @@
 > `node-sass`
 > `react-router`
 > `react-router-dom`
+> `storybook`
 
 Strona postawiona na frameworku React.
 
@@ -19,6 +20,15 @@ Odpala dev build na [http://localhost:3000](http://localhost:3000)
 ### `npm run build`
 
 Buduje apke do folderu `build` <br />
+
+### `npm run storybook`
+
+Odpala `storybooka` (katalog wszystkich dostępnych w
+ aplikacji komponentów)
+ 
+Dostępny na: [http://localhost:3001](http://localhost:3001)
+
+
 
 
 
