@@ -9,7 +9,7 @@ const AboutSection = () => {
       <StyledSection about>
           <h1>Potrzebujesz porady prawnej?</h1>
           <h2>Radcy prawni dostępni w naszej aplikacji Ci pomogą.</h2>
-          <h1>Anonimowość? Skorzystaj z możliwości <strong>konta premium</strong>.</h1>
+          <h1>Anonimowość? Skorzystaj z możliwości <strong>konta premium.</strong></h1>
 
           <h2>Masz krępujące pytanie? Wszedłeś w konflikt z prawem? Aby zadać pytanie, wystarczy, że podasz imię oraz e-mail. Prawnik, który udzieli Ci odpowiedzi, jest ponadto objęty bezwzględną tajemnicą powierzonych mu informacji – dzięki temu możesz być spokojny o poufność Waszej korespondencji.</h2>
           <h1>Prosty język, jasność przekazu - odpowiadamy prosto z mostu.</h1>
