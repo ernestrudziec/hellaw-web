@@ -22,12 +22,18 @@ padding: 0;
 margin-top: 0;
 font-size: 2.5em;
 font-family: Oxanium, sans-serif;
+
+@media (max-width: 330px){
+font-size: 2em;
+}
+
 }
 
 h2{
 
 font-size: 1.5em;
 font-weight: 300;
+
 }
 
 button{
@@ -87,6 +93,7 @@ text-decoration: underline;
    background: #DBFF00;
    padding: 0.2em 0.4em;
    font-size: 1em;
+   display: inline-block;
   
    border-radius: 5px;
    }

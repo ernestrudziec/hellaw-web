@@ -5,6 +5,10 @@ const StyledLogo = styled.img`
 
   width: 150px;
   height: 200px;
+  
+  @media (max-width: 330px){
+  width: 120px;
+  }
 `;
 
 export default StyledLogo;

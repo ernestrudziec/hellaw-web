@@ -4,8 +4,9 @@ import styled, { css } from 'styled-components';
 
 const StyledButton = styled.button`
 
-  width: ${({width}) => width || "200px"};
+  width: ${({width}) => width || "auto"};
   height: ${({height}) => height || "50px"};
+  padding: 0 0.5em;
   color: white;
   background: #131313;
   border-radius: 5px;
@@ -23,14 +24,13 @@ const StyledButton = styled.button`
   
  
 
-
  
  ${({yellow}) => yellow &&
     css`
       background: #DBFF00;
       color: #131313;
       border: none;
-      
+        
       
       
      `}
@@ -39,10 +39,12 @@ const StyledButton = styled.button`
     css`
       background: white;
       color: #131313;
-      width:  120px;
+      width:  130px;
       height: 30px;
       border-radius: 5px;
-      font-size: 1.6rem;
+      font-size: 1.4rem;
+      
+      
  
       
       

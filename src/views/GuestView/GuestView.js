@@ -22,7 +22,7 @@ const GuestView = () => {
             <Navigation/>
            <StyledSection>
                <h1>Setki radców prawnych gotowych udzielić Ci szybkiej odpowiedzi.</h1>
-               <StyledButton width="300px" yellow>
+               <StyledButton yellow>
                     Załóż konto za darmo!
                </StyledButton>
                <h3>Jesteś radcą prawnym? <b>Dowiedz się więcej tutaj.</b></h3>

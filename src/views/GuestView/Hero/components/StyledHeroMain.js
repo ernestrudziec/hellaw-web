@@ -7,7 +7,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-height: 80vh;
+height: 90vh;
 color: white;
 position: relative;
 
