@@ -1,82 +1,39 @@
-import React, {useEffect, useState} from 'react';
-import { StyledMain, StyledHeading } from "./components/GuestViewWrapper";
-import Logo from "../../components/Logo/Logo";
-import {AuthUserWrapper} from "./components/AuthUserWrapper";
-import Button from "../../components/StyledComponents/StyledButton/Button";
-import { AuthButtons } from "./components/AuthUserWrapper";
-import LoginPanel from "./components/LoginPanel/LoginPanel";
-import RegisterPanel
-    from "./components/RegisterPanel/RegisterPanel";
-import StyledInput
-    from "../../components/StyledComponents/StyledInput/StyledInput";
+import { StyledMain } from "./components/GuestViewWrapper";
+import Navigation from "../../components/Navigation/Navigation";
+import React from "react";
+import StyledSection
+    from "./StyledComponents/StyledSection";
+import StyledButton
+    from "../../components/StyledComponents/StyledButton/StyledButton";
 
 
 const GuestView = () => {
 
-    function toggleLoginPanelCollapse(){
-        setLoginPanelCollapse(!isLoginPanelCollapsed);
-    }
 
-    function toggleRegisterPanelCollapse(){
-        setRegisterPanelCollapse(!isRegisterPanelCollapsed);
-    }
-
-
-    let [isLoginPanelCollapsed, setLoginPanelCollapse] = useState(true);
-    let [isRegisterPanelCollapsed, setRegisterPanelCollapse] = useState(true);
 
 
     return (
 
         <StyledMain>
+            <Navigation/>
 
-            <Logo white/>
-            <StyledHeading>
+           <StyledSection>
+               <h1>Setki radców prawnych gotowych udzielić Ci szybkiej odpowiedzi.</h1>
 
-                <h1>Lus est ars boni et aequi.</h1>
-                <h2>Prawo jest sztuką tego, co dobre i
-                    sprawiedliwe</h2>
+               <StyledButton width="300px" white>
+                   Dołącz już teraz za darmo!
+               </StyledButton>
+               <h3>Jesteś radcą prawnym? <b>Dowiedz się więcej tutaj.</b></h3>
 
-            </StyledHeading>
-
-
-            <AuthUserWrapper
-                isRegisterPanelCollapsed={isRegisterPanelCollapsed}
-                isLoginPanelCollapsed={isLoginPanelCollapsed}
-            >
+               <h2>Zweryfikowani  prawnicy, ranking najlepszych adwokatów, dostęp
+                   do dziesiątek artykułów prawnych oraz prywatne konsultacje.</h2>
 
 
-                <LoginPanel isCollapsed={isLoginPanelCollapsed}>
-                    <h1>Witamy ponownie.</h1>
-                    <StyledInput placeholder="e-mail"/>
-                    <StyledInput type="password" placeholder="hasło"/>
-                </LoginPanel>
 
-                <RegisterPanel isCollapsed={isRegisterPanelCollapsed}>
-                    <h1>Zarejestruj się.</h1>
-                    <StyledInput placeholder="e-mail"/>
-                    <StyledInput type="password" placeholder="hasło"/>
-                    <StyledInput type="password" placeholder="potwierdź hasło"/>
-                </RegisterPanel>
+           </StyledSection>
 
-                <AuthButtons>
 
-                <Button isDisabled={!isRegisterPanelCollapsed}
-                        onClick={toggleLoginPanelCollapse}
-                        width="45%">
-                    Zaloguj się
-                </Button>
-                <Button
-                    isDisabled={!isLoginPanelCollapsed}
-                    onClick={toggleRegisterPanelCollapse}
-                    white
-                    width="45%">
-                    Dołącz do HELLaw
-                </Button>
 
-                </AuthButtons>
-
-            </AuthUserWrapper>
 
         </StyledMain>
     );

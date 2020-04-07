@@ -5,10 +5,9 @@ export const StyledMain = styled.main`
 width: 100vw;
 display: flex;
 justify-content: center;
-padding: 1em 0;
 align-items: center;
 flex-direction: column;
-min-height: 100vh;
+height: 80vh;
 color: white;
 position: relative;
 
