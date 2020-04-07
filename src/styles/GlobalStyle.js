@@ -10,7 +10,7 @@ const GlobalStyles = createGlobalStyle`
 
 body, html{
 
-font-family: 'Lato', sans-serif;
+font-family: 'Baloo 2', sans-serif;
 color: black;
 padding: 0;
 margin: 0;
