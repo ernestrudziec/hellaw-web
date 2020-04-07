@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, {css} from 'styled-components';
 
 const StyledSection = styled.section`
 display: flex;
@@ -31,6 +31,11 @@ font-weight: 300;
 }
 
 button{
+
+span{
+margin-right: 5px;
+}
+
 :hover{
 text-decoration: underline;
 }
@@ -44,6 +49,12 @@ font-weight: 300;
 color: gray;
 
 b{
+display: initial;
+margin-left: 5px;
+@media screen and (max-width: 500px){
+margin: 0;
+display: block;
+}
 color: white;
 cursor: pointer;
 
@@ -53,6 +64,43 @@ text-decoration: underline;
 }
 
 }
+
+
+ ${({about}) => about &&
+    css`
+     
+  
+   margin: 5em 0;
+   
+   padding: 0;
+   background: white;
+   text-align: center;
+   align-items: center;
+   color: #131313;
+   
+   
+   h1{
+   margin: 1em 0;
+   max-width: 800px;
+   
+   strong{
+   background: #DBFF00;
+   padding: 0.2em 0.4em;
+   font-size: 1em;
+  
+   border-radius: 5px;
+   }
+   }
+   h2{
+   max-width: 1200px;
+   }
+      
+      
+      
+     `}
+ 
 `;
+
+
 
 export default StyledSection;

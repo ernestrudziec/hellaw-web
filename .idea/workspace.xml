@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/StyledComponents/StyledHamburger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/StyledComponents/StyledNavigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/components/Hamburger.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/GuestView/AboutSection/AboutSection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledMain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo/hellaw_logo_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo/hellaw_logo_white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/StyledLogo/StyledLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/StyledLogo/StyledLogo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/Button.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/AuthUserWrapper.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/GuestViewWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/components/GuestViewWrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/LoginPanel/LoginPanel.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/RegisterPanel/RegisterPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/GuestViewWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/Hero/components/StyledHeroMain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,11 +75,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views/GuestView/StyledComponents" />
+      <recent name="$PROJECT_DIR$/src/views/GuestView/Hero" />
       <recent name="$PROJECT_DIR$/src/components/Navigation/components" />
       <recent name="$PROJECT_DIR$/src/components/StyledComponents" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/views" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -128,7 +120,7 @@
       <workItem from="1586083535696" duration="16336000" />
       <workItem from="1586109405131" duration="440000" />
       <workItem from="1586181151414" duration="599000" />
-      <workItem from="1586206453770" duration="36721000" />
+      <workItem from="1586206453770" duration="41436000" />
     </task>
     <servers />
   </component>
@@ -152,26 +144,26 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="1" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.969@0.23.1680.969" timestamp="1586098636674" />
-    <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586280920542">
+    <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586289066937">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586280920542" />
-    <state width="1078" height="235" key="GridCell.Tab.0.bottom" timestamp="1586275923619">
+    <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586289066937" />
+    <state width="916" height="235" key="GridCell.Tab.0.bottom" timestamp="1586287597999">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1078" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586275923619" />
-    <state width="1078" height="235" key="GridCell.Tab.0.center" timestamp="1586275923619">
+    <state width="916" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586287597999" />
+    <state width="916" height="235" key="GridCell.Tab.0.center" timestamp="1586287597996">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1078" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586275923619" />
-    <state width="1078" height="235" key="GridCell.Tab.0.left" timestamp="1586275923618">
+    <state width="916" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586287597996" />
+    <state width="916" height="235" key="GridCell.Tab.0.left" timestamp="1586287597995">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1078" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586275923618" />
-    <state width="1078" height="235" key="GridCell.Tab.0.right" timestamp="1586275923619">
+    <state width="916" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586287597995" />
+    <state width="916" height="235" key="GridCell.Tab.0.right" timestamp="1586287597998">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="1078" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586275923619" />
+    <state width="916" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586287597998" />
     <state width="1010" height="282" key="GridCell.Tab.1.bottom" timestamp="1586083324007">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

@@ -17,11 +17,15 @@ const StyledButton = styled.button`
   outline: none;
   font-size: 2rem;
   font-weight: 600;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
  
 
 
  
- ${({white}) => white &&
+ ${({yellow}) => yellow &&
     css`
       background: #DBFF00;
       color: #131313;

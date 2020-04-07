@@ -14,7 +14,7 @@ const Navigation = () => {
 
             <Logo white/>
             <StyledButton login>
-                Zaloguj się
+                Zaloguj się <span className="fas fa-sign-in-alt"/>
             </StyledButton>
 
         </StyledNavigation>
