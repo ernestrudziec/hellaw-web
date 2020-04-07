@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import RootView from './views/RootView';
-
+import './fonts.css';
 
 
 ReactDOM.render(
