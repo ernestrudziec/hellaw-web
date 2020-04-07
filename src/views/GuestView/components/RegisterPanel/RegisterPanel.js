@@ -12,7 +12,7 @@ height: 250px;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-transition: 0.5s ease;
+transition: 0.5s ease-in-out;
 
 overflow: hidden;
 
@@ -30,7 +30,7 @@ padding: 0;
  ${({isCollapsed}) => isCollapsed &&
     css`
    
-      width: 0;
+      
       height: 0;
       overflow: hidden;
     

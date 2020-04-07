@@ -10,15 +10,13 @@ const Button = styled.button`
   background: #131313;
   border-radius: 10px;
   cursor: pointer;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
   border: solid 3px #1E1E1E;
   box-sizing: border-box;
   font-family: Oxanium, sans-serif;
   outline: none;
  
- :hover{
- transform: scale(1.05);
- }
+
 
  
  ${({white}) => white &&

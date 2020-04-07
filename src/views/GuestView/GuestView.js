@@ -22,7 +22,7 @@ const GuestView = () => {
     }
 
 
-    let [isLoginPanelCollapsed, setLoginPanelCollapse] = useState(false);
+    let [isLoginPanelCollapsed, setLoginPanelCollapse] = useState(true);
     let [isRegisterPanelCollapsed, setRegisterPanelCollapse] = useState(true);
 
 
@@ -51,6 +51,7 @@ const GuestView = () => {
                     <StyledInput placeholder="e-mail"/>
                     <StyledInput type="password" placeholder="hasło"/>
                 </LoginPanel>
+
                 <RegisterPanel isCollapsed={isRegisterPanelCollapsed}>
                     <h1>Zarejestruj się.</h1>
                     <StyledInput placeholder="e-mail"/>

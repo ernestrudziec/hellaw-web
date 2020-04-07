@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/AuthUserWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/components/AuthUserWrapper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/LoginPanel/LoginPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/components/LoginPanel/LoginPanel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/components/RegisterPanel/RegisterPanel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/components/RegisterPanel/RegisterPanel.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +116,7 @@
       <workItem from="1586083535696" duration="16336000" />
       <workItem from="1586109405131" duration="440000" />
       <workItem from="1586181151414" duration="599000" />
-      <workItem from="1586206453770" duration="16447000" />
+      <workItem from="1586206453770" duration="17278000" />
     </task>
     <servers />
   </component>
@@ -142,22 +144,22 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586222657817" />
-    <state width="992" height="235" key="GridCell.Tab.0.bottom" timestamp="1586222705484">
+    <state width="992" height="235" key="GridCell.Tab.0.bottom" timestamp="1586223691163">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="992" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586222705484" />
-    <state width="992" height="235" key="GridCell.Tab.0.center" timestamp="1586222705483">
+    <state width="992" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586223691163" />
+    <state width="992" height="235" key="GridCell.Tab.0.center" timestamp="1586223691162">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="992" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586222705483" />
-    <state width="992" height="235" key="GridCell.Tab.0.left" timestamp="1586222705483">
+    <state width="992" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586223691162" />
+    <state width="992" height="235" key="GridCell.Tab.0.left" timestamp="1586223691162">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="992" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586222705483" />
-    <state width="992" height="235" key="GridCell.Tab.0.right" timestamp="1586222705484">
+    <state width="992" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586223691162" />
+    <state width="992" height="235" key="GridCell.Tab.0.right" timestamp="1586223691163">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
-    <state width="992" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586222705484" />
+    <state width="992" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586223691163" />
     <state width="1010" height="282" key="GridCell.Tab.1.bottom" timestamp="1586083324007">
       <screen x="0" y="23" width="1680" height="969" />
     </state>

@@ -55,19 +55,12 @@ font-size: 1.5rem;
 
 export const AuthButtons = styled.div`
 
-
-
 display: flex;
 justify-content: space-evenly;
 align-items: center;
 transition: 1s;
-margin-top: 10px;
-padding-bottom: 10px;
+padding: 10px 0;
 width: 100%;
-
-
-
-
 
 
 `;
