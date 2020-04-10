@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/RootView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RootView.js" afterDir="false" />
     </list>
@@ -115,7 +116,7 @@
       <workItem from="1586206453770" duration="43489000" />
       <workItem from="1586452062832" duration="177000" />
       <workItem from="1586456164983" duration="45000" />
-      <workItem from="1586456317945" duration="17702000" />
+      <workItem from="1586456317945" duration="18117000" />
     </task>
     <servers />
   </component>
@@ -139,6 +140,10 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="1" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.969@0.23.1680.969" timestamp="1586098636674" />
+    <state x="228" y="304" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586562717521">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state x="228" y="304" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.963@0.23.1680.963" timestamp="1586562717521" />
     <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1586289066937">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
