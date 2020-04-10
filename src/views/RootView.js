@@ -14,6 +14,8 @@ import {
 } from "react-router-dom";
 import PageNotFoundView
     from "./PageNotFoundView/PageNotFoundView";
+import SignUpView from "./SignUpView/SignUpView";
+
 
 
 const RootView = () => (
@@ -29,7 +31,7 @@ const RootView = () => (
 
 
 
-
+                     <Route path='/signup' component={SignUpView}/>
                      <Route path='/404' component={PageNotFoundView} />
                      <Redirect from='*' to='/404' />
                  </Switch>
