@@ -2,18 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Hooks/useSignUpForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/SignUpView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledInput/StyledInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledInput/StyledInput.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/RootView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/RootView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +115,7 @@
       <workItem from="1586206453770" duration="43489000" />
       <workItem from="1586452062832" duration="177000" />
       <workItem from="1586456164983" duration="45000" />
-      <workItem from="1586456317945" duration="16926000" />
+      <workItem from="1586456317945" duration="17702000" />
     </task>
     <servers />
   </component>

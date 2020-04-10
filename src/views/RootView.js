@@ -32,8 +32,8 @@ const RootView = () => (
 
 
                      <Route path='/signup' component={SignUpView}/>
-                     <Route path='/404' component={PageNotFoundView} />
-                     <Redirect from='*' to='/404' />
+                     <Route component={PageNotFoundView} />
+                     
                  </Switch>
 
              </ThemeProvider>
