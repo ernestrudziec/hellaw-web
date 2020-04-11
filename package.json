@@ -6,6 +6,8 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
     "formik": "^2.1.4",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
@@ -44,6 +46,5 @@
     "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^2.1.1",
     "@storybook/react": "^5.3.18"
-
   }
 }

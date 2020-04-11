@@ -7,7 +7,37 @@ import StyledSignUpView
 import Logo from "../../components/Logo/Logo";
 
 
+
 const SignUpView = () => {
+
+
+
+
+    // let [inputs, setInputs] = useState({email: '', password: '', password2: ''});
+
+//
+//     useEffect(() => {
+//         console.log(inputs);
+//
+//         console.log(validateFormRegister(inputs));
+//     });
+//
+//     let getInputs = (e) => {
+//
+//         e.preventDefault();
+//         setInputs({email: e.target[0].value,
+//             password: e.target[1].value,
+//             password2: e.target[2].value
+//         });
+//
+//     };
+//
+//     let validateFormRegister = (inputs) => {
+//
+//         if(inputs.password.length < 8)
+//             return 'too-short-password';
+// };
+
 
 
     return (

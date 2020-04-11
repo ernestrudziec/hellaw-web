@@ -9,6 +9,8 @@ align-items: center;
 flex-direction: column;
 width: 90%;
 
+max-width: 350px;
+
 
 
 div{

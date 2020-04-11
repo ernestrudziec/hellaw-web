@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/StyledFormError/StyledFormError.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/_redirects" beforeDir="false" afterPath="$PROJECT_DIR$/public/_redirects" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useSignUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/SignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/SignUpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -115,7 +122,8 @@
       <workItem from="1586206453770" duration="43489000" />
       <workItem from="1586452062832" duration="177000" />
       <workItem from="1586456164983" duration="45000" />
-      <workItem from="1586456317945" duration="18981000" />
+      <workItem from="1586456317945" duration="20306000" />
+      <workItem from="1586607027811" duration="11662000" />
     </task>
     <servers />
   </component>
@@ -147,25 +155,25 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586289066937" />
-    <state width="794" height="232" key="GridCell.Tab.0.bottom" timestamp="1586555713810">
+    <state width="937" height="225" key="GridCell.Tab.0.bottom" timestamp="1586606701118">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="794" height="232" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1586555713810" />
+    <state width="937" height="225" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1586606701118" />
     <state width="916" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586287597999" />
-    <state width="794" height="232" key="GridCell.Tab.0.center" timestamp="1586555713809">
+    <state width="937" height="225" key="GridCell.Tab.0.center" timestamp="1586606701117">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="794" height="232" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1586555713809" />
+    <state width="937" height="225" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1586606701117" />
     <state width="916" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586287597996" />
-    <state width="794" height="232" key="GridCell.Tab.0.left" timestamp="1586555713809">
+    <state width="937" height="225" key="GridCell.Tab.0.left" timestamp="1586606701116">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="794" height="232" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1586555713809" />
+    <state width="937" height="225" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1586606701116" />
     <state width="916" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586287597995" />
-    <state width="794" height="232" key="GridCell.Tab.0.right" timestamp="1586555713810">
+    <state width="937" height="225" key="GridCell.Tab.0.right" timestamp="1586606701118">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="794" height="232" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1586555713810" />
+    <state width="937" height="225" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1586606701118" />
     <state width="916" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586287597998" />
     <state width="1010" height="282" key="GridCell.Tab.1.bottom" timestamp="1586083324007">
       <screen x="0" y="23" width="1680" height="969" />
@@ -215,17 +223,19 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1010" height="282" key="GridCell.Tab.3.right/0.23.1680.969@0.23.1680.969" timestamp="1586083324010" />
-    <state x="730" y="116" width="939" height="875" key="SettingsEditor" timestamp="1586103849599">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="194" y="204" width="939" height="875" key="SettingsEditor" timestamp="1586606486398">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state x="194" y="204" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1586606486398" />
     <state x="730" y="116" width="939" height="875" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1586103849599" />
     <state width="625" height="500" key="SwitcherDM" timestamp="1586084243034">
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="625" height="500" key="SwitcherDM/0.23.1680.969@0.23.1680.969" timestamp="1586084243034" />
-    <state x="111" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586081006387">
-      <screen x="0" y="23" width="1680" height="969" />
+    <state x="111" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586606183651">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state x="111" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.963@0.23.1680.963" timestamp="1586606183651" />
     <state x="111" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.969@0.23.1680.969" timestamp="1586081006387" />
     <state x="223" y="23" width="838" height="963" key="search.everywhere.popup" timestamp="1586548925484">
       <screen x="0" y="23" width="1680" height="963" />
