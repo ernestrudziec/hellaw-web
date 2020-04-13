@@ -4,10 +4,11 @@ import Logo from "../../components/Logo/Logo";
 import LoginForm from "./components/LoginForm";
 import { connect } from 'react-redux';
 import {Redirect} from "react-router";
+import Cookie from 'js-cookie';
 
-const LoginView = ({ userID, error }) => {
+const LoginView = ({ error }) => {
 
-    if(userID){
+    if(Cookie.get('access')){
         return(
             <Redirect to='/logged'/>
         );
@@ -24,7 +25,7 @@ const LoginView = ({ userID, error }) => {
                     sprawiedliwe.</h3>
 
                 <h1> Witamy ponownie! ;) </h1>
-                <h1> {userID ? 'Zalogowano!' : null}</h1>
+                <h1> {Cookie.get('access') ? 'Zalogowano!' : null}</h1>
 
 
                 <LoginForm error={error}/>
@@ -36,7 +37,7 @@ const LoginView = ({ userID, error }) => {
 
 }
 
-    const mapStateToProps = ({userID = null, error = null}) => ({userID, error});
+    const mapStateToProps = ({error = null}) => ({error});
 
 export default connect(mapStateToProps)(LoginView);
 
