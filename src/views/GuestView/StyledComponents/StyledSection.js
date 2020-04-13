@@ -72,7 +72,7 @@ text-decoration: underline;
 }
 
 
- ${({about}) => about &&
+ ${({aboutsection}) => aboutsection &&
     css`
      
   

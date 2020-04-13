@@ -107,6 +107,9 @@ h4{
 font-size: 1.6em;
 font-weight: 100;
 
+}
+
+
 b{
 transition: 0.3s;
 cursor: pointer;

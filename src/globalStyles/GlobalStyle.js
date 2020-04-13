@@ -33,6 +33,19 @@ text-decoration: none;
 color: inherit;
 }
 
+
+input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #131313 inset !important;
+        -webkit-text-fill-color: white !important;
+        -webkit-transition: 0.5s;
+
+}
+
 `;
+
+
 
 export default GlobalStyles;

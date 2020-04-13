@@ -1,12 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import StyledSignUpForm from "./StyledSignUpForm";
-import {isEmptyArray, setIn} from "formik";
+
 import StyledFormError
     from "../../../components/StyledFormError/StyledFormError";
+import { connect } from 'react-redux';
 
 
+import { authenticateAction } from '../../../actions/index';
+import {Link} from "react-router-dom";
 
-const SignUpForm = ({callback}) => {
+
+const SignUpForm = ({ authenticate }) => {
 
     let [inputs, setInputs] = useState({email: '', password: '', password2: ''});
     let [errors, setErrors] = useState('');
@@ -59,14 +63,26 @@ const SignUpForm = ({callback}) => {
 
     };
 
+    let authUser = (e) => {
+        e.preventDefault();
+      console.log(e.target[0].value);
+        console.log(e.target[1].value);
+        console.log(e.target[2].value);
 
+        setInputs({email: e.target[0].value,
+            password: e.target[1].value});
+
+        authenticate(inputs.email, inputs.password);
+
+
+    };
 
     return (
-        <StyledSignUpForm error={errors} onChange={handleChange} onSubmit={callback} >
+        <StyledSignUpForm error={errors} onChange={handleChange} onSubmit={authUser} >
 
 
             <div>
-                <input formNoValidate placeholder="jan.kowalski@przykład.pl" id="email" type="text" inputMode="email" name="email" />
+                <input  placeholder="jan.kowalski@przykład.pl" id="email" type="text"  autoComplete="new-email" name="email" />
                 <label htmlFor="email">E-mail:</label>
             </div>
             <StyledFormError
@@ -75,7 +91,7 @@ const SignUpForm = ({callback}) => {
                 Nieprawidłowy e-mail
             </StyledFormError>
             <div>
-                <input formNoValidate placeholder="Twoje hasło (min. 6 znaków)" id="password" type="password" name="password"/>
+                <input  placeholder="Twoje hasło (min. 8 znaków)" id="password" type="password" autoComplete="new-password" name="password"/>
                 <label htmlFor="password">Hasło:</label>
             </div>
 
@@ -88,7 +104,7 @@ const SignUpForm = ({callback}) => {
 
             <div>
 
-                <input formNoValidate placeholder="Twoje hasło (min. 6 znaków)" id="password2" type="password" name="password2" />
+                <input  placeholder="Twoje hasło (min. 8 znaków)" id="password2" type="password" autoComplete="new-password" name="password2" />
                 <label htmlFor="password2">Potwierdź hasło:</label>
             </div>
             <StyledFormError
@@ -96,11 +112,16 @@ const SignUpForm = ({callback}) => {
             >
                 Hasła nie są takie same, sprawdź poprawność.</StyledFormError>
 
+            <div>
             <button type="submit">Zarejestruj się</button>
-            <h4>Masz już konto? <b>Zaloguj się tutaj.</b></h4>
+            <h4>Masz już konto? <Link to='/login'><b>Zaloguj się tutaj.</b></Link></h4>
+            </div>
 
           </StyledSignUpForm>
     );
 };
 
-export default SignUpForm;
+const mapDispatchToProps = dispatch => ({
+    authenticate: (email, password) => dispatch(authenticateAction(email, password)),
+});
+export default connect(null, mapDispatchToProps)(SignUpForm);

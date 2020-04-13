@@ -6,7 +6,7 @@ import StyledMain from "../StyledComponents/StyledMain";
 const AboutSection = () => {
     return (
         <StyledMain >
-      <StyledSection about>
+      <StyledSection aboutsection>
           <h1>Potrzebujesz porady prawnej?</h1>
           <h2>Radcy prawni dostępni w naszej aplikacji Ci pomogą.</h2>
           <h1>Anonimowość? Skorzystaj z możliwości <strong>konta premium.</strong></h1>

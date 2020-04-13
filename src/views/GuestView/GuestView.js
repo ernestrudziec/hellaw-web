@@ -10,6 +10,7 @@ import StyledSection
     from "./StyledComponents/StyledSection";
 import AboutSection from "./AboutSection/AboutSection";
 import { Link } from "react-router-dom";
+import {Redirect} from "react-router-dom";
 
 
 const GuestView = () => {
