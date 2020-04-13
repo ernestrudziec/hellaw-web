@@ -1,5 +1,6 @@
 import store from "../store";
 import Cookie from 'js-cookie';
+import history from "../history";
 
 const initialState = {
 
@@ -23,7 +24,7 @@ const rootReducer = (state = initialState, action) => {
             console.log(Cookie.get());
             // console.log(localStorage);
             console.log(action.payload);
-
+            history.push('/logged');
             return {
                 ...state,
                 userID: action.payload.data.id,

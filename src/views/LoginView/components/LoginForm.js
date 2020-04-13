@@ -12,12 +12,9 @@ const LoginForm = ({authenticate, error}) => {
     let [errors, setErrors] = useState('');
 
     let authUser = (e) => {
+
         e.preventDefault();
-
-        setInputs({email: e.target[0].value,
-            password: e.target[1].value});
-
-        authenticate(inputs.email, inputs.password);
+        authenticate(e.target[0].value, e.target[1].value);
 
 
     };
@@ -28,7 +25,7 @@ const LoginForm = ({authenticate, error}) => {
         <StyledLoginForm onSubmit={authUser}>
 
             <div>
-                <input  placeholder="jan.kowalski@przykład.pl" id="email" type="text" inputMode="email" autoComplete="email" name="email" />
+                <input  placeholder="jan.kowalski@przykład.pl" id="email" type="email"  autoComplete="email" name="email" />
                 <label htmlFor="email">E-mail:</label>
             </div>
 

@@ -4,7 +4,7 @@ import './fonts.css';
 import {Provider} from "react-redux";
 import store from "./store";
 import {
-    BrowserRouter as Router, Link, Redirect, Route,
+    Router, Link, Redirect, Route,
     Switch
 } from "react-router-dom";
 import GlobalStyles from "./globalStyles/GlobalStyle";
@@ -22,6 +22,7 @@ import LogoutButton from "./components/logoutbutton";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
 import { GuestRoute } from "./components/GuestRoute/GuestRoute";
 import Cookie from "js-cookie";
+import history from "./history";
 
 // console.log('index: ');
 // console.log(localStorage);
@@ -39,8 +40,9 @@ ReactDOM.render(
 
       <Provider store={store}>
 
-          <Router>
+          <Router history={history}>
               <GlobalStyles/>
+
               <ThemeProvider theme={theme}>
 
                   <Switch>
@@ -55,8 +57,8 @@ ReactDOM.render(
                   </Switch>
 
               </ThemeProvider>
-          </Router>
 
+      </Router>
       </Provider>
   </React.StrictMode>,
 
