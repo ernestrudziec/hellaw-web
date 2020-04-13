@@ -1,5 +1,5 @@
 
-
+import Cookie from 'js-cookie';
 import axios from 'axios';
 
 let headers = {
@@ -42,7 +42,8 @@ export const authenticateAction = (email, password) => dispatch => {
         .catch(err => {
             console.log(err);
             dispatch({type: 'AUTHENTICATE_FAILURE'})
-            console.log(localStorage);
+            // console.log(localStorage);
+            console.log(Cookie.get());
         });
 
 };
@@ -57,7 +58,8 @@ export const checkTokenAction = (access) => dispatch => {
         .then(payload => {
             dispatch({type: 'TOKEN_VALID', payload});
             console.log(payload);
-            console.log(localStorage);
+            // console.log(localStorage);
+            console.log(Cookie.get());
         })
         .catch(err => {
             console.log(err);

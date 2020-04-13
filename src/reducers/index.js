@@ -1,5 +1,5 @@
 import store from "../store";
-
+import Cookie from 'js-cookie';
 
 const initialState = {
 
@@ -14,10 +14,14 @@ const rootReducer = (state = initialState, action) => {
     switch(action.type) {
 
         case ('AUTHENTICATE_SUCCESS'): {
-            localStorage.setItem('access', action.payload.data.access);
-            localStorage.setItem('refresh', action.payload.data.refresh);
-            localStorage.setItem('user', action.payload.data.id);
-            console.log(localStorage);
+            // localStorage.setItem('access', action.payload.data.access);
+            // localStorage.setItem('refresh', action.payload.data.refresh);
+            // localStorage.setItem('user', action.payload.data.id);
+            Cookie.set('access', action.payload.data.access);
+            Cookie.set('refresh', action.payload.data.refresh);
+            Cookie.set('user', action.payload.data.id);
+            console.log(Cookie.get());
+            // console.log(localStorage);
             console.log(action.payload);
 
             return {
@@ -40,12 +44,17 @@ const rootReducer = (state = initialState, action) => {
             }
 
         case('LOGOUT_USER'): {
-            localStorage.removeItem('access');
-            localStorage.removeItem('refresh');
-            localStorage.removeItem('user');
+            // localStorage.removeItem('access');
+            // localStorage.removeItem('refresh');
+            // localStorage.removeItem('user');
+            Cookie.remove('access');
+            Cookie.remove('refresh');
+            Cookie.remove('user');
+
 
             console.log("Logout!");
-            console.log(localStorage);
+            // console.log(localStorage);
+            console.log(Cookie.get());
 
 
             return {

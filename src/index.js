@@ -21,9 +21,11 @@ import DesktopView from "./views/DesktopView/DesktopView";
 import LogoutButton from "./components/logoutbutton";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
 import { GuestRoute } from "./components/GuestRoute/GuestRoute";
+import Cookie from "js-cookie";
 
 // console.log('index: ');
 // console.log(localStorage);
+console.log(Cookie.get());
 //
 // const access = localStorage.getItem('access');
 // if (access) {
