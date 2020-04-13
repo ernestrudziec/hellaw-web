@@ -8,13 +8,6 @@ import Cookie from 'js-cookie';
 
 const LoginView = ({ error }) => {
 
-    if(Cookie.get('access')){
-        return(
-            <Redirect to='/logged'/>
-        );
-    }
-
-    else {
 
         return (
             <StyledLoginView>
@@ -33,7 +26,7 @@ const LoginView = ({ error }) => {
 
             </StyledLoginView>
         );
-    }
+
 
 }
 
