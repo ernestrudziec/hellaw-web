@@ -7,7 +7,7 @@ let headers = {
 };
 
 const hellaw = axios.create({
-    baseURL: 'http://hellaw.eu/',
+    baseURL: 'https://hellaw.eu/',
     headers: headers
 
 });
