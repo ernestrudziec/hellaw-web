@@ -1,6 +1,7 @@
 
 import Cookie from 'js-cookie';
 import axios from 'axios';
+import history from "../history";
 
 let headers = {
     "Content-Type" : "application/json"
@@ -36,7 +37,7 @@ export const authenticateAction = (email, password) => dispatch => {
         .then(payload => {
             // console.log(payload);
             dispatch({type: 'AUTHENTICATE_SUCCESS', payload });
-
+            history.push('/logged');
 
         })
         .catch(err => {

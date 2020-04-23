@@ -24,7 +24,7 @@ const rootReducer = (state = initialState, action) => {
             console.log(Cookie.get());
             // console.log(localStorage);
             console.log(action.payload);
-            history.push('/logged');
+
             return {
                 ...state,
                 userID: action.payload.data.id,

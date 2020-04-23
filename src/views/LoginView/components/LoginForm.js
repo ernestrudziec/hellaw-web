@@ -13,9 +13,9 @@ const LoginForm = ({authenticate, error}) => {
 
     let authUser = (e) => {
 
-        e.preventDefault();
-        authenticate(e.target[0].value, e.target[1].value);
 
+        authenticate(e.target[0].value, e.target[1].value);
+        e.preventDefault();
 
     };
 
@@ -55,4 +55,6 @@ const LoginForm = ({authenticate, error}) => {
 const mapDispatchToProps = dispatch => ({
     authenticate: (email, password) => dispatch(authenticateAction(email, password)),
 });
+
+
 export default connect(null, mapDispatchToProps)(LoginForm);
