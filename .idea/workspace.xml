@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/StyledUserInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/UserInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Logo/StyledLogo/StyledLogo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Logo/StyledLogo/StyledLogo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/logoutbutton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/LoginForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +118,7 @@
       <workItem from="1586607027811" duration="64203000" />
       <workItem from="1587224844834" duration="55000" />
       <workItem from="1587238195138" duration="1313000" />
-      <workItem from="1587671810551" duration="6646000" />
+      <workItem from="1587671810551" duration="7159000" />
     </task>
     <servers />
   </component>

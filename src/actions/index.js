@@ -55,7 +55,7 @@ export const checkTokenAction = (access) => dispatch => {
     dispatch({type: 'CHECK_TOKEN_REQUEST'});
 
     return hellaw
-        .post('auth/jwt/verify', {"token": access})
+        .post('auth/jwt/verify/', {"token": access})
         .then(payload => {
             dispatch({type: 'TOKEN_VALID', payload});
             console.log(payload);
@@ -72,7 +72,7 @@ export const getUserInfoAction = (access) => dispatch => {
  console.log('ACTION!');
 
     return hellaw
-        .get('/auth/users/me', {headers: {
+        .get('/auth/users/me/', {headers: {
                 'Authorization': `Bearer ${access}`
             }})
         .then(payload => {
