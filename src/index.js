@@ -18,11 +18,11 @@ import PageNotFoundView
 import GuestView from "./views/GuestView/GuestView";
 import {checkTokenAction, logoutAction} from "./actions";
 import DesktopView from "./views/DesktopView/DesktopView";
-import LogoutButton from "./components/logoutbutton";
 import { PrivateRoute } from "./components/PrivateRoute/PrivateRoute";
 import { GuestRoute } from "./components/GuestRoute/GuestRoute";
 import Cookie from "js-cookie";
 import history from "./history";
+import LogoutView from "./views/LogoutView/LogoutView";
 
 // console.log('index: ');
 // console.log(localStorage);
@@ -47,6 +47,7 @@ ReactDOM.render(
 
                   <Switch>
 
+                      <GuestRoute path='/logout' component={LogoutView} />
                       <GuestRoute exact path='/' component={GuestView} />
                       <PrivateRoute path="/logged" component={DesktopView}/>
                       <GuestRoute path='/login' component={LoginView}/>

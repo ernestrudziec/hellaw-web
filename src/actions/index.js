@@ -66,3 +66,22 @@ export const checkTokenAction = (access) => dispatch => {
             console.log(err);
         });
 };
+
+export const getUserInfoAction = (access) => dispatch => {
+
+ console.log('ACTION!');
+
+    return hellaw
+        .get('/auth/users/me', {headers: {
+                'Authorization': `Bearer ${access}`
+            }})
+        .then(payload => {
+            dispatch({type: 'USER_INFO_SUCCESS', payload});
+            console.log(payload);
+            // console.log(localStorage);
+            console.log(Cookie.get());
+        })
+        .catch(err => {
+            console.log(err);
+        });
+};

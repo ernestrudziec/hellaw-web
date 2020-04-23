@@ -48,6 +48,8 @@ const LoginForm = ({authenticate, error}) => {
         </>
     );
 
+
+
 };
 
 
@@ -55,6 +57,7 @@ const LoginForm = ({authenticate, error}) => {
 const mapDispatchToProps = dispatch => ({
     authenticate: (email, password) => dispatch(authenticateAction(email, password)),
 });
+
 
 
 export default connect(null, mapDispatchToProps)(LoginForm);

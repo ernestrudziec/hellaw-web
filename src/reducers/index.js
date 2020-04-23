@@ -1,12 +1,15 @@
 import store from "../store";
 import Cookie from 'js-cookie';
 import history from "../history";
+import {getUserInfoAction} from "../actions";
 
 const initialState = {
 
     userID: '',
     error: null,
-    isTokenValid: null
+    isTokenValid: null,
+    isLawyer: null,
+    userEmail: null
 
 };
 
@@ -38,11 +41,14 @@ const rootReducer = (state = initialState, action) => {
                 error: true,
             };
 
+
         case('TOKEN_VALID'):
             return {
                 ...state,
                 isTokenValid: true
             }
+
+
 
         case('LOGOUT_USER'): {
             // localStorage.removeItem('access');
@@ -65,6 +71,30 @@ const rootReducer = (state = initialState, action) => {
 
             }
         }
+
+
+
+        case('USER_INFO_SUCCESS'): {
+            console.log("SUCCESS");
+
+
+            return {
+                ...state,
+                userID: action.payload.data.id,
+                userEmail: action.payload.data.email,
+                isLawyer: action.payload.data.is_lawyer
+            }
+
+
+        }
+
+            break;
+
+        case('USER_INFO_FAILURE'): {
+            console.log("FAILURE");
+        }
+
+
     }
 
 

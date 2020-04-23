@@ -57,6 +57,17 @@ const StyledButton = styled.button`
       opacity: 0.3;
   
      `}
+  
+  ${({logout}) => logout &&
+    css`
+          background: #131313;
+      color: white;
+      width:  130px;
+      height: 30px;
+      border-radius: 5px;
+      font-size: 1.4rem;
+  
+     `}
  
 `;
 

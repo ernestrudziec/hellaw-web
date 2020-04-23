@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const StyledLogo = styled.img`
 
   width: 150px;
-  height: 200px;
+  height: auto;
   
   @media (max-width: 330px){
   width: 120px;
