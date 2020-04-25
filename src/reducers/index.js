@@ -9,7 +9,8 @@ const initialState = {
     error: null,
     isTokenValid: null,
     isLawyer: null,
-    userEmail: null
+    userEmail: null,
+    isUserInfoFetched: false,
 
 };
 
@@ -73,6 +74,13 @@ const rootReducer = (state = initialState, action) => {
         }
 
 
+        case('USER_INFO_REQUEST'):{
+
+            return {
+                ...state,
+                isUserInfoFetched: false
+            }
+        }
 
         case('USER_INFO_SUCCESS'): {
             console.log("SUCCESS");
@@ -82,7 +90,8 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 userID: action.payload.data.id,
                 userEmail: action.payload.data.email,
-                isLawyer: action.payload.data.is_lawyer
+                isLawyer: action.payload.data.is_lawyer,
+                isUserInfoFetched: true
             }
 
 

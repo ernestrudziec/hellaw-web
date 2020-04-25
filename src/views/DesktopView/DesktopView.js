@@ -17,13 +17,15 @@ import Navigation
     from "../../components/Navigation/Navigation";
 import StyledButton
     from "../../components/StyledComponents/StyledButton/StyledButton";
+import SmallSpinner
+    from "../../components/LoadingSpinners/SmallSpinner/SmallSpinner";
 
 
 
 
 
 
-const DesktopView = ({getUserInfo, userID, isLawyer, userEmail}) => {
+const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetched}) => {
 
 
     useEffect(() => {
@@ -41,7 +43,8 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail}) => {
             <Link to='/logout'> <StyledButton logout onClick={() => { store.dispatch({type: 'LOGOUT_USER'});}}> Wyloguj się <span className="fas fa-sign-out-alt"/> </StyledButton></Link>
             </nav>
 
-            <UserInfo userID={userID} isLawyer={isLawyer} userEmail={userEmail} />
+   <UserInfo userID={userID} isLawyer={isLawyer} userEmail={userEmail} />
+
 
         </StyledDesktopView>
     );
@@ -56,7 +59,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-const mapStateToProps = ({userID, userEmail, isLawyer}) => ({userID,  userEmail, isLawyer});
+const mapStateToProps = ({userID, userEmail, isLawyer, isUserInfoFetched}) => ({userID,  userEmail, isLawyer, isUserInfoFetched});
 
 
 

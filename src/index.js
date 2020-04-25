@@ -23,6 +23,7 @@ import { GuestRoute } from "./components/GuestRoute/GuestRoute";
 import Cookie from "js-cookie";
 import history from "./history";
 import LogoutView from "./views/LogoutView/LogoutView";
+import BeforeUserAuthSpinner from './components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner';
 
 // console.log('index: ');
 // console.log(localStorage);

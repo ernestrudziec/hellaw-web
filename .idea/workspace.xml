@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner/SmallSpinner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner/SmallSpinner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/StyledUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/StyledUserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/UserInfo.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +28,7 @@
         <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -47,8 +60,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.jscs" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -65,6 +78,9 @@
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/views/DesktopView/components" />
       <recent name="$PROJECT_DIR$/src/views/GuestView/StyledComponents" />
@@ -118,7 +134,7 @@
       <workItem from="1586607027811" duration="64203000" />
       <workItem from="1587224844834" duration="55000" />
       <workItem from="1587238195138" duration="1313000" />
-      <workItem from="1587671810551" duration="7159000" />
+      <workItem from="1587671810551" duration="9911000" />
     </task>
     <servers />
   </component>

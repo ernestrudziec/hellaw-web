@@ -3,6 +3,8 @@ import {useEffect, useState} from "react";
 import React from "react";
 import axios from "axios";
 import Cookie from 'js-cookie';
+import BeforeUserAuthSpinner
+    from "../LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner";
 
 let headers = {
     "Content-Type" : "application/json"
@@ -59,7 +61,7 @@ export const GuestRoute = ({ component: Component, ...rest }) => {
 
     }, []);
 
-    if (!isTokenValidated) return <div> AUTHENTICATING ... </div>; // or
+    if (!isTokenValidated) return <BeforeUserAuthSpinner/>; // or
     // some kind of loading animation
 
     return (<Route {...rest}

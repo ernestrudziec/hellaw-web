@@ -5,20 +5,37 @@ import {
     StyledUserInfo, StyledUserType
 } from "./StyledUserInfo";
 
+import { connect } from "react-redux";
+import SmallSpinner
+    from "../../../../components/LoadingSpinners/SmallSpinner/SmallSpinner";
 
-const UserInfo = ({isLawyer, userID, userEmail}) => {
-    return (
+
+
+const UserInfo = ({isLawyer, userID, userEmail, isUserInfoFetched}) => {
+
+    if (isUserInfoFetched) {
+
+        return (
+            <StyledUserInfo>
+                <div>
+                    <StyledUserType>{isLawyer ? "Prawnik" : "Użytkownik"}</StyledUserType>
+                    <StyledUserID>ID: {userID}</StyledUserID>
+                </div>
+
+                <StyledUserEmail> {userEmail} </StyledUserEmail>
+
+            </StyledUserInfo>
+        );
+    } else return(
         <StyledUserInfo>
-
-            <div>
-            <StyledUserType>{isLawyer ? "Prawnik" : "Użytkownik"}</StyledUserType>
-            <StyledUserID>ID: {userID}</StyledUserID>
-            </div>
-
-            <StyledUserEmail> {userEmail} </StyledUserEmail>
-
+            <SmallSpinner/>
         </StyledUserInfo>
     );
-};
 
-export default UserInfo;
+
+}
+
+
+const mapStateToProps = ({isUserInfoFetched}) => ({isUserInfoFetched});
+
+export default connect(mapStateToProps, null)(UserInfo);

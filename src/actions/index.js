@@ -69,7 +69,9 @@ export const checkTokenAction = (access) => dispatch => {
 
 export const getUserInfoAction = (access) => dispatch => {
 
- console.log('ACTION!');
+ console.log('user info');
+
+    dispatch({type: 'USER_INFO_REQUEST'});
 
     return hellaw
         .get('/auth/users/me/', {headers: {
