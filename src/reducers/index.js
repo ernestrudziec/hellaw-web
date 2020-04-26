@@ -11,7 +11,8 @@ const initialState = {
     isLawyer: null,
     userEmail: null,
     isUserInfoFetched: false,
-    isUserSignUpPosted: true
+    isUserSignUpPosted: true,
+    allInquiries: null,
 
 };
 
@@ -26,9 +27,9 @@ const rootReducer = (state = initialState, action) => {
             Cookie.set('access', action.payload.data.access);
             Cookie.set('refresh', action.payload.data.refresh);
             Cookie.set('user', action.payload.data.id);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
             // console.log(localStorage);
-            console.log(action.payload);
+            // console.log(action.payload);
 
             return {
                 ...state,
@@ -61,9 +62,9 @@ const rootReducer = (state = initialState, action) => {
             Cookie.remove('user');
 
 
-            console.log("Logout!");
+            // console.log("Logout!");
             // console.log(localStorage);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
 
 
             return {
@@ -84,7 +85,7 @@ const rootReducer = (state = initialState, action) => {
         }
 
         case('USER_INFO_SUCCESS'): {
-            console.log("SUCCESS");
+            // console.log("SUCCESS");
 
 
             return {
@@ -108,8 +109,13 @@ const rootReducer = (state = initialState, action) => {
 
         case('GET_ALL_INQUIRIES_SUCCESS'): {
 
-            console.log("get!");
-            console.log(action.payload);
+            // console.log("get!");
+            // console.log(action.payload.data);
+
+            return {
+                ...state,
+                allInquiries: action.payload.data,
+            }
 
         }
 

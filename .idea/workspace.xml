@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSwitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpSuccessView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +125,7 @@
       <workItem from="1586607027811" duration="64203000" />
       <workItem from="1587224844834" duration="55000" />
       <workItem from="1587238195138" duration="1313000" />
-      <workItem from="1587671810551" duration="20243000" />
+      <workItem from="1587671810551" duration="22260000" />
     </task>
     <servers />
   </component>
@@ -277,10 +268,10 @@
     </state>
     <state x="111" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.963@0.23.1680.963" timestamp="1586606183651" />
     <state x="111" y="410" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.969@0.23.1680.969" timestamp="1586081006387" />
-    <state x="223" y="23" width="838" height="963" key="search.everywhere.popup" timestamp="1587674667795">
+    <state x="223" y="23" width="838" height="963" key="search.everywhere.popup" timestamp="1587895755751">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state x="223" y="23" width="838" height="963" key="search.everywhere.popup/0.23.1680.963@0.23.1680.963" timestamp="1587674667795" />
+    <state x="223" y="23" width="838" height="963" key="search.everywhere.popup/0.23.1680.963@0.23.1680.963" timestamp="1587895755751" />
     <state x="223" y="23" width="838" height="969" key="search.everywhere.popup/0.23.1680.969@0.23.1680.969" timestamp="1586084890978" />
   </component>
 </project>

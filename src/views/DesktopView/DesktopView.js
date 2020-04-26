@@ -20,10 +20,11 @@ import StyledButton
     from "../../components/StyledComponents/StyledButton/StyledButton";
 import SmallSpinner
     from "../../components/LoadingSpinners/SmallSpinner/SmallSpinner";
+import {object} from "prop-types";
 
 
 
-const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetched, getAllInquiries}) => {
+const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetched, getAllInquiries, allInquiries}) => {
 
 
     useEffect(() => {
@@ -31,8 +32,12 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
         getUserInfo(Cookie.get('access'));
         getAllInquiries(Cookie.get('access'));
 
+
     }, []);
 
+    useEffect(() => {
+        console.log(allInquiries);
+    });
 
     return (
         <StyledDesktopView>
@@ -44,6 +49,18 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
 
    <UserInfo userID={userID} isLawyer={isLawyer} userEmail={userEmail} />
 
+
+            {
+                allInquiries ?
+                allInquiries.map(data => {
+                    return(
+                        <>
+                        <h4>{data.id}</h4> <h3>{data.title}</h3> <h5> {data.description} </h5>
+                        </>
+                    )
+
+            }) : null
+            }
 
         </StyledDesktopView>
     );
@@ -59,7 +76,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
-const mapStateToProps = ({userID, userEmail, isLawyer, isUserInfoFetched}) => ({userID,  userEmail, isLawyer, isUserInfoFetched});
+const mapStateToProps = ({userID, userEmail, isLawyer, isUserInfoFetched, allInquiries}) => ({userID,  userEmail, isLawyer, isUserInfoFetched, allInquiries});
 
 
 

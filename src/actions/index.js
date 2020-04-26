@@ -44,7 +44,7 @@ export const authenticateAction = (email, password) => dispatch => {
             console.log(err);
             dispatch({type: 'AUTHENTICATE_FAILURE'})
             // console.log(localStorage);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
         });
 
 };
@@ -58,9 +58,9 @@ export const checkTokenAction = (access) => dispatch => {
         .post('auth/jwt/verify/', {"token": access})
         .then(payload => {
             dispatch({type: 'TOKEN_VALID', payload});
-            console.log(payload);
+            // console.log(payload);
             // console.log(localStorage);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
         })
         .catch(err => {
             console.log(err);
@@ -69,7 +69,7 @@ export const checkTokenAction = (access) => dispatch => {
 
 export const getUserInfoAction = (access) => dispatch => {
 
- console.log('user info');
+
 
     dispatch({type: 'USER_INFO_REQUEST'});
 
@@ -79,9 +79,9 @@ export const getUserInfoAction = (access) => dispatch => {
             }})
         .then(payload => {
             dispatch({type: 'USER_INFO_SUCCESS', payload});
-            console.log(payload);
+            // console.log(payload);
             // console.log(localStorage);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
         })
         .catch(err => {
             console.log(err);
@@ -91,7 +91,7 @@ export const getUserInfoAction = (access) => dispatch => {
 
 export const getInquiriesAction = (access) => dispatch => {
 
-    console.log('hehe');
+
 
     dispatch({type: 'GET_ALL_INQUIRIES_REQUEST'});
 
@@ -101,9 +101,6 @@ export const getInquiriesAction = (access) => dispatch => {
             }})
         .then(payload => {
             dispatch({type: 'GET_ALL_INQUIRIES_SUCCESS', payload});
-            console.log(payload);
-            // console.log(localStorage);
-            console.log(Cookie.get());
         })
         .catch(err => {
             console.log(err);
@@ -126,9 +123,9 @@ export const signUpAction = (email, password, isLawyer) => dispatch => {
         })
         .then(payload => {
             dispatch({type: 'SIGN_UP_SUCCESS', payload});
-            console.log(payload);
+            // console.log(payload);
             // console.log(localStorage);
-            console.log(Cookie.get());
+            // console.log(Cookie.get());
         })
         .catch(err => {
             dispatch({type: 'SIGN_UP_FAILURE'});
