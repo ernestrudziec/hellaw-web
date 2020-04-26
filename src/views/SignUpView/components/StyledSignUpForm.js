@@ -90,18 +90,8 @@ input:focus + label {
 
 }
 
-button{
-width: 100%;
-height: 40px;
-background: #131313;
-color: white;
-font-size: 2em;
-border-radius: 5px;
-border: none;
-margin-top: 40px;
-font-family: Oxanium, sans-serif;
-cursor: pointer;
-}
+
+
 
 h4{
 font-size: 1.6em;

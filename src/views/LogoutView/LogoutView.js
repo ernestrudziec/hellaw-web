@@ -20,18 +20,18 @@ font-weight: 300;
 }
 
 img{
-width: 70%
+width: 200px;
 }
 
 div{
-margin-bottom: 3em;
+margin-bottom: 1em;
 display: flex;
 justify-content: center;
 align-items: center;
 
-font-size: 1.3em;
+font-size: 1em;
 span{
-font-size: 4em;
+font-size: 2em;
 margin: 0.3em;
 
 }
@@ -53,7 +53,7 @@ const LogoutView = () => {
             <span className="fas fa-sign-in-alt"/>
             <h1>Wylogowano pomyślnie!</h1>
             </div>
-            <Link to='/'><StyledButton> Wróć do strony głównej</StyledButton></Link>
+            <Link to='/'><StyledButton fontsize="1.6em" width="220px" height="40px"> Wróć do strony głównej</StyledButton></Link>
 
         </StyledLogoutView>
     );

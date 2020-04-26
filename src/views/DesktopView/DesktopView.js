@@ -7,7 +7,8 @@ import StyledDesktopView from "./StyledDesktopView";
 
 import {
     authenticateAction,
-    getUserInfoAction
+    getUserInfoAction,
+    getInquiriesAction
 } from "../../actions";
 import {connect} from "react-redux";
 import Cookie from 'js-cookie';
@@ -22,15 +23,13 @@ import SmallSpinner
 
 
 
-
-
-
-const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetched}) => {
+const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetched, getAllInquiries}) => {
 
 
     useEffect(() => {
 
         getUserInfo(Cookie.get('access'));
+        getAllInquiries(Cookie.get('access'));
 
     }, []);
 
@@ -56,6 +55,7 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
 
 const mapDispatchToProps = dispatch => ({
     getUserInfo: (access) => dispatch(getUserInfoAction(access)),
+    getAllInquiries: (access) => dispatch(getInquiriesAction(access)),
 });
 
 

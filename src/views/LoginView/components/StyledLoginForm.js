@@ -42,8 +42,16 @@ input:focus + label {
 
 }
 button{
+width: 100%;
+height: 40px;
 background: white;
 color: #131313;
+font-size: 2em;
+border-radius: 5px;
+border: none;
+font-family: Oxanium, sans-serif;
+cursor: pointer;
+
 }
 
 `;

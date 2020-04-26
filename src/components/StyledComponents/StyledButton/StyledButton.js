@@ -16,12 +16,18 @@ const StyledButton = styled.button`
   box-sizing: border-box;
   font-family: Oxanium, sans-serif;
   outline: none;
-  font-size: 2rem;
+  font-size: ${({fontsize}) => fontsize || "2rem"};
   font-weight: 600;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  transition: 0.3s ease-in-out;
   
+  :hover{
+  transform: scale(0.98);
+  opacity: 0.9;
+
+  }
  
 
  

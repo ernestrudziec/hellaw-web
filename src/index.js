@@ -24,6 +24,8 @@ import Cookie from "js-cookie";
 import history from "./history";
 import LogoutView from "./views/LogoutView/LogoutView";
 import BeforeUserAuthSpinner from './components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner';
+import SignUpSuccessView
+    from "./views/SignUpView/components/SignUpSuccessView";
 
 // console.log('index: ');
 // console.log(localStorage);
@@ -47,7 +49,7 @@ ReactDOM.render(
               <ThemeProvider theme={theme}>
 
                   <Switch>
-
+                      <GuestRoute path='/signup/success' component={SignUpSuccessView} />
                       <GuestRoute path='/logout' component={LogoutView} />
                       <GuestRoute exact path='/' component={GuestView} />
                       <PrivateRoute path="/logged" component={DesktopView}/>

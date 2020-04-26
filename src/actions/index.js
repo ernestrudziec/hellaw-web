@@ -85,5 +85,53 @@ export const getUserInfoAction = (access) => dispatch => {
         })
         .catch(err => {
             console.log(err);
+            dispatch({type: 'USER_INFO_FAILURE'});
+        });
+};
+
+export const getInquiriesAction = (access) => dispatch => {
+
+    console.log('hehe');
+
+    dispatch({type: 'GET_ALL_INQUIRIES_REQUEST'});
+
+    return hellaw
+        .get('/api/inquiries/', {headers: {
+                'Authorization': `Bearer ${access}`
+            }})
+        .then(payload => {
+            dispatch({type: 'GET_ALL_INQUIRIES_SUCCESS', payload});
+            console.log(payload);
+            // console.log(localStorage);
+            console.log(Cookie.get());
+        })
+        .catch(err => {
+            console.log(err);
+        });
+};
+
+
+
+export const signUpAction = (email, password, isLawyer) => dispatch => {
+
+    console.log('sign up!');
+
+    dispatch({type: 'SIGN_UP_REQUEST'});
+
+    return hellaw
+        .post('/auth/users/', {
+            email: email,
+            password: password,
+            is_lawyer: isLawyer
+        })
+        .then(payload => {
+            dispatch({type: 'SIGN_UP_SUCCESS', payload});
+            console.log(payload);
+            // console.log(localStorage);
+            console.log(Cookie.get());
+        })
+        .catch(err => {
+            dispatch({type: 'SIGN_UP_FAILURE'});
+            console.log(err);
         });
 };

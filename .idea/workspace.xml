@@ -2,19 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner/SmallSpinner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner/SmallSpinner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSwitch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpSuccessView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/StyledUserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/StyledUserInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/components/UserInfo/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,8 +27,8 @@
         <option value="package.json" />
         <option value="CSS File" />
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,7 +75,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript.Linters" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -134,7 +134,7 @@
       <workItem from="1586607027811" duration="64203000" />
       <workItem from="1587224844834" duration="55000" />
       <workItem from="1587238195138" duration="1313000" />
-      <workItem from="1587671810551" duration="9911000" />
+      <workItem from="1587671810551" duration="20243000" />
     </task>
     <servers />
   </component>
@@ -181,34 +181,34 @@
     <state x="405" y="260" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.963@0.23.1680.963" timestamp="1587677696723" />
     <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586289066937" />
     <state x="405" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972@0.23.1680.972" timestamp="1586728950642" />
-    <state width="1131" height="-12" key="GridCell.Tab.0.bottom" timestamp="1587677893204">
+    <state width="1242" height="-12" key="GridCell.Tab.0.bottom" timestamp="1587816951156">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="1131" height="-12" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1587677893204" />
+    <state width="1242" height="-12" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1587816951156" />
     <state width="654" height="225" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586287597999" />
     <state width="902" height="225" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1586731838511" />
     <state width="986" height="225" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1586776549214" />
-    <state width="1131" height="-12" key="GridCell.Tab.0.center" timestamp="1587677893203">
+    <state width="1242" height="-12" key="GridCell.Tab.0.center" timestamp="1587816951154">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="1131" height="-12" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1587677893203" />
+    <state width="1242" height="-12" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1587816951154" />
     <state width="654" height="225" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586287597996" />
     <state width="902" height="225" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1586731838510" />
     <state width="986" height="225" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1586776549213" />
-    <state width="1131" height="-12" key="GridCell.Tab.0.left" timestamp="1587677893201">
+    <state width="1242" height="-12" key="GridCell.Tab.0.left" timestamp="1587816951153">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="1131" height="-12" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1587677893201" />
+    <state width="1242" height="-12" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1587816951153" />
     <state width="654" height="225" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1586708950913" />
     <state width="916" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586287597995" />
     <state width="902" height="225" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1586731838510" />
     <state width="986" height="225" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1586776549213" />
-    <state width="1131" height="-12" key="GridCell.Tab.0.right" timestamp="1587677893204">
+    <state width="1242" height="-12" key="GridCell.Tab.0.right" timestamp="1587816951155">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="1131" height="-12" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1587677893204" />
+    <state width="1242" height="-12" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1587816951155" />
     <state width="654" height="225" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586287597998" />
     <state width="902" height="225" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1586731838511" />
@@ -261,14 +261,15 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1010" height="282" key="GridCell.Tab.3.right/0.23.1680.969@0.23.1680.969" timestamp="1586083324010" />
-    <state x="194" y="204" width="939" height="875" key="SettingsEditor" timestamp="1586606486398">
+    <state x="194" y="204" width="939" height="875" key="SettingsEditor" timestamp="1587815571091">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state x="194" y="204" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1586606486398" />
+    <state x="194" y="204" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1587815571091" />
     <state x="730" y="116" width="939" height="875" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1586103849599" />
-    <state width="625" height="503" key="SwitcherDM" timestamp="1586715841880">
-      <screen x="0" y="23" width="1680" height="973" />
+    <state width="625" height="498" key="SwitcherDM" timestamp="1587890605848">
+      <screen x="0" y="23" width="1680" height="963" />
     </state>
+    <state width="625" height="498" key="SwitcherDM/0.23.1680.963@0.23.1680.963" timestamp="1587890605848" />
     <state width="625" height="500" key="SwitcherDM/0.23.1680.969@0.23.1680.969" timestamp="1586084243034" />
     <state width="625" height="503" key="SwitcherDM/0.23.1680.973@0.23.1680.973" timestamp="1586715841880" />
     <state x="111" y="408" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1586606183651">

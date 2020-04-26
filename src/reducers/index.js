@@ -11,6 +11,7 @@ const initialState = {
     isLawyer: null,
     userEmail: null,
     isUserInfoFetched: false,
+    isUserSignUpPosted: true
 
 };
 
@@ -97,10 +98,40 @@ const rootReducer = (state = initialState, action) => {
 
         }
 
-            break;
+
 
         case('USER_INFO_FAILURE'): {
             console.log("FAILURE");
+        }
+
+        break;
+
+        case('GET_ALL_INQUIRIES_SUCCESS'): {
+
+            console.log("get!");
+            console.log(action.payload);
+
+        }
+
+        break;
+
+        case('SIGN_UP_REQUEST'): {
+
+            return {
+                ...state,
+                isUserSignUpPosted: false,
+            }
+
+        }
+
+        break;
+        case('SIGN_UP_SUCCESS'): {
+            return {
+                ...state,
+                isUserSignUpPosted: true,
+            }
+
+
         }
 
 
