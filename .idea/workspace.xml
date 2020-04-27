@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Inquiry/Inquiry.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Inquiry/StyledInquiry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +124,7 @@
       <workItem from="1586607027811" duration="64203000" />
       <workItem from="1587224844834" duration="55000" />
       <workItem from="1587238195138" duration="1313000" />
-      <workItem from="1587671810551" duration="25851000" />
+      <workItem from="1587671810551" duration="26083000" />
     </task>
     <servers />
   </component>

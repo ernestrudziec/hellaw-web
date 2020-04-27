@@ -54,7 +54,7 @@ const rootReducer = (state = initialState, action) => {
 
 
         case('LOGOUT_USER'): {
-            // localStorage.removeItem('access');
+            // localStorage.removeItem('access')
             // localStorage.removeItem('refresh');
             // localStorage.removeItem('user');
             Cookie.remove('access');
