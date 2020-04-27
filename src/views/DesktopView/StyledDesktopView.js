@@ -18,6 +18,7 @@ justify-content: space-between;
 padding: 0 1em;
 width: 100%;
 align-items: center;
+box-shadow: 0 10px 20px rgba(0,0,0,0.12),  rgba(0,0,0,0.01);
 }
 
 `;

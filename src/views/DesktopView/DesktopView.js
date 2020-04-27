@@ -21,6 +21,7 @@ import StyledButton
 import SmallSpinner
     from "../../components/LoadingSpinners/SmallSpinner/SmallSpinner";
 import {object} from "prop-types";
+import Inquiry from "../../components/Inquiry/Inquiry";
 
 
 
@@ -52,10 +53,17 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
 
             {
                 allInquiries ?
-                allInquiries.map(data => {
+                allInquiries.map((data, i) => {
+                    if(i < 6)
                     return(
                         <>
-                        <h4>{data.id}</h4> <h3>{data.title}</h3> <h5> {data.description} </h5>
+                        <Inquiry id={data.id}
+                                 category={data.category}
+                                 description={data.description}
+                                 premiumStatus={data.premium_status}
+                                 responses={data.responses}
+                                 title={data.title}
+                        />
                         </>
                     )
 

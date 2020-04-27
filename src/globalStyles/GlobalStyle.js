@@ -23,8 +23,9 @@ font-size: 62.5%;
 }
 
 *, *::before, *::after{
-
+-webkit-font-smoothing: antialiased;
 box-sizing: border-box;
+
 
 }
 

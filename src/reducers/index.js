@@ -68,7 +68,7 @@ const rootReducer = (state = initialState, action) => {
 
 
             return {
-                ...state,
+
                 isTokenValid: false,
                 userID: null,
 
