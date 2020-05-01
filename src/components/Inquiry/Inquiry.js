@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     StyledInquiryCategory,
     StyledInquiryDescription, StyledInquiryResponses,
@@ -6,13 +6,35 @@ import {
     StyledInquiryWrapper,
     StyledInquiryHeader,
     StyledReplyInquiryButton,
-    StyledInquiryBottom
+    StyledInquiryBottom,
+    StyledInquiryDescriptionTop,
+    StyledShowMoreButton
 } from "./StyledInquiry";
 
+function truncateString(str, length, truncate) {
 
-const Inquiry = ({category, description, id, photos, premiumStatus, responses, title}) => {
+    if(truncate){
+
+
+        if(str.length <= length)
+
+    {
+        return str
+    } else {return str.slice(0, length) + '...'}
+    } else {
+        return str;
+    }
+
+}
+
+
+const Inquiry = ({ category, description, id, photos, premiumStatus, responses, title, isTruncated, key}) => {
+
+    const [isInquiryExpanded, setInquiryExpand] = useState(false);
+
+
     return (
-        <StyledInquiryWrapper>
+        <StyledInquiryWrapper key={key} id={id}>
 
             <StyledInquiryHeader>
             <StyledInquiryTitle> {title} </StyledInquiryTitle>
@@ -20,8 +42,12 @@ const Inquiry = ({category, description, id, photos, premiumStatus, responses, t
             </StyledInquiryHeader>
 
             <StyledInquiryDescription>
+                <StyledInquiryDescriptionTop>
                 <StyledInquiryResponses>Odpowiedzi: {responses}</StyledInquiryResponses>
-                {description}
+                    <StyledShowMoreButton onClick={() => setInquiryExpand(!isInquiryExpanded)}><div className="fas fa-caret-down"></div></StyledShowMoreButton>
+                </StyledInquiryDescriptionTop>
+
+                {truncateString(description, 100, !isInquiryExpanded)}
             </StyledInquiryDescription>
 
             <StyledInquiryBottom>

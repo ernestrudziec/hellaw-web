@@ -54,15 +54,17 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
             {
                 allInquiries ?
                 allInquiries.map((data, i) => {
-                    if(i < 6)
+                    if(i > 3 && i < 6)
                     return(
                         <>
-                        <Inquiry id={data.id}
+                        <Inquiry key={data.id + "key"}
+                                 id={data.id}
                                  category={data.category}
                                  description={data.description}
                                  premiumStatus={data.premium_status}
                                  responses={data.responses}
                                  title={data.title}
+
                         />
                         </>
                     )

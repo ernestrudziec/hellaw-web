@@ -35,16 +35,24 @@ flex: 8;
 
 export const StyledInquiryDescription = styled.p`
 
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+
+
+
 line-height: 1.5;
 font-size: 1.6rem;
 background: #FFFFFF;
 font-weight: 200;
 padding: 1em;
+height: auto;
 border-radius: 5px;
+
+
+
+
+
+    
+
+
 
 
 `;
@@ -69,9 +77,39 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin: 0 !important;
+transition: 1s;
+
+`;
+
+export const StyledInquiryDescriptionTop = styled.div`
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin: 0 !important;
+
+
 
 
 `;
+
+export const StyledShowMoreButton = styled.button`
+
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+width: 30px;
+background: transparent;
+font-size: 2em;
+border: none;
+margin-top: -8px;
+outline: none;
+
+
+
+
+`;
+
 
 export const StyledInquiryID = styled.data`
 
