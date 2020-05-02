@@ -24,6 +24,10 @@ const LoginForm = ({authenticate, error}) => {
         <>
         <StyledLoginForm onSubmit={authUser}>
 
+            <StyledFormError filled error={error}>
+                <span>Niestety, podany email i hasło są nieprawidłowe. Spróbuj ponownie lub skorzystaj z opcji <b>zresetowania hasła.</b></span>
+            </StyledFormError>
+
             <div>
                 <input  placeholder="jan.kowalski@przykład.pl" id="email" type="email"  autoComplete="email" name="email" />
                 <label htmlFor="email">E-mail:</label>
@@ -35,9 +39,7 @@ const LoginForm = ({authenticate, error}) => {
             </div>
 
             <div>
-            <StyledFormError filled error={error}>
-                <span>Niestety, podany email i hasło są nieprawidłowe. Spróbuj ponownie lub skorzystaj z opcji <b>zresetowania hasła.</b></span>
-            </StyledFormError>
+
             <button type="submit">Zaloguj się</button>
             <h4>Nie masz konta w HELLaw? <Link to='/signup'><b>Załóż je tutaj.</b></Link></h4>
 

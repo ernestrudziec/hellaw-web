@@ -18,7 +18,9 @@ color: red;
       background: #CC0101;
       color: white;
       border: none;
-        height: 50px;
+      border-radius: 5px;
+      margin-bottom: 1em;
+        height: 60px;
         box-shadow: 0 19px 38px rgba(0,0,0,0.1), 0 15px 12px rgba(0,0,0,0.05);
      
       

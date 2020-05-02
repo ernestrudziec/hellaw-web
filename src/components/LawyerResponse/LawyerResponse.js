@@ -5,7 +5,8 @@ import {
     StyledLawyerName,
     StyledLawyerAvatar,
     StyledResponseContent,
-    StyledResponseDate
+    StyledResponseDate,
+    StyledBestResponse
 } from "./StyledLawyerResponse";
 
 
@@ -15,17 +16,28 @@ let img3 = 'https://images.unsplash.com/photo-1565104781149-275a5392dabc?ixlib=r
 
 
 let finalImg = null;
+let best = false;
 
 const LawyerResponse = ({index, content, date, isBest, lawyerID, lawyerName, id }) => {
 
-    if(index === 0) finalImg = img1;
-    if(index === 1) finalImg = img2;
-    if(index === 2) finalImg = img3;
+
+
+    if(index === 0) finalImg = img2;
+    if(index === 1) finalImg = img3;
+    if(index === 2) finalImg = img1;
+
+    if (index === 0) best = true; else best = false;
+
 
 
 
     return (
+
         <StyledLawyerResponse id={id}>
+
+            {
+                best ? <StyledBestResponse>Najlepsza odpowiedź <i className="fas fa-check"></i></StyledBestResponse> : null
+            }
         <StyledLawyerInfo bg={finalImg} id={lawyerID}>
             <StyledLawyerName>{lawyerName}</StyledLawyerName>
             <StyledLawyerAvatar src={finalImg}/>

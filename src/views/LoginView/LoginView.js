@@ -18,7 +18,7 @@ const LoginView = ({ error }) => {
             Prawo jest sztuką tego, co dobre i
             sprawiedliwe.</h3>
 
-            <h1> Witamy ponownie! ;) </h1>
+            <h1> Wprowadź email i hasło...</h1>
             <h1> {Cookie.get('access') ? 'Zalogowano!' : null}</h1>
 
 

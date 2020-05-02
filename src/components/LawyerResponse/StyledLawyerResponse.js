@@ -5,13 +5,14 @@ export const StyledLawyerResponse = styled.article`
 
 display: flex;
 justify-content: center;
+
 flex-direction: column;
 font-size: 1.6rem;
 width: 90vw;
-max-width: 800px;
+max-width: 600px;
 border-radius: 10px;
 
-padding: 1em 0;
+padding: 1em;
 margin-bottom: 2em;
 box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.01);
 
@@ -25,8 +26,9 @@ display: flex;
 justify-content: space-between;
 position: relative;
 color: white;
-margin: 1em;
+margin: 1em 0;
 border-radius: 10px;
+
 
 
 :after{
@@ -91,4 +93,19 @@ export const StyledResponseDate = styled.data`
 margin: 0 1em;
 opacity: 0.5;
 align-self: flex-end;
+`;
+
+export const StyledBestResponse = styled.div`
+
+
+font-size: 1.4em;
+background: gold;
+color: #131313;
+
+border-radius: 5px;
+padding: 0.5em 1em;
+
+i{
+margin-left: 0.2em;
+}
 `;
