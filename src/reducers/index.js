@@ -51,8 +51,6 @@ const rootReducer = (state = initialState, action) => {
                 isTokenValid: true
             }
 
-
-
         case('LOGOUT_USER'): {
             // localStorage.removeItem('access')
             // localStorage.removeItem('refresh');
@@ -99,13 +97,12 @@ const rootReducer = (state = initialState, action) => {
 
         }
 
-
-
         case('USER_INFO_FAILURE'): {
             console.log("FAILURE");
         }
 
         break;
+
 
         case('GET_ALL_INQUIRIES_SUCCESS'): {
 
@@ -121,6 +118,7 @@ const rootReducer = (state = initialState, action) => {
 
         break;
 
+
         case('SIGN_UP_REQUEST'): {
 
             return {
@@ -131,6 +129,7 @@ const rootReducer = (state = initialState, action) => {
         }
 
         break;
+
         case('SIGN_UP_SUCCESS'): {
             return {
                 ...state,
@@ -138,6 +137,29 @@ const rootReducer = (state = initialState, action) => {
             }
 
 
+        }
+
+
+        case('GET_INQUIRY_BY_ID_REQUEST'): {
+            return {
+                ...state,
+                isExactInquiryLoaded: false,
+            }
+        }
+
+        case('GET_INQUIRY_BY_ID_SUCCESS'): {
+            return {
+                ...state,
+                isExactInquiryLoaded: true,
+                exactInquiry: action.payload.data[0]
+            }
+
+        }
+
+        case('GET_INQUIRY_BY_ID_FAILURE'): {
+            return {
+                ...state
+            }
         }
 
 

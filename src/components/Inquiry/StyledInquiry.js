@@ -1,5 +1,6 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
 
 export const StyledInquiryWrapper = styled.article`
 
@@ -13,6 +14,13 @@ margin: 1em 0;
 border-radius: 5px;
 box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.01);
 
+  ${({exact}) => exact &&
+    css`
+    width: 90vw;
+    max-width: 800px;
+   
+      
+     `}
 
 `;
 
@@ -45,6 +53,11 @@ font-weight: 200;
 padding: 1em;
 height: auto;
 border-radius: 5px;
+
+ ${({exact}) => exact &&
+    css`
+   
+     `}
 
 
 
@@ -140,6 +153,10 @@ justify-content: space-between;
 align-items: center;
 width: 100%;
 
+a{
+width: 100%;
+}
+
 `;
 
 export const StyledReplyInquiryButton = styled.button`
@@ -150,7 +167,7 @@ border-radius: 5px;
 cursor: pointer;
 font-family: Oxanium, sans-serif;
 font-weight: 600;
-
+width: 100%;
 flex: auto;
 color: white;
 

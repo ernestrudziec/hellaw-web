@@ -26,6 +26,7 @@ import LogoutView from "./views/LogoutView/LogoutView";
 import BeforeUserAuthSpinner from './components/LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner';
 import SignUpSuccessView
     from "./views/SignUpView/components/SignUpSuccessView";
+import InquiryView from "./views/InquiryView/InquiryView";
 
 // console.log('index: ');
 // console.log(localStorage);
@@ -49,6 +50,7 @@ ReactDOM.render(
               <ThemeProvider theme={theme}>
 
                   <Switch>
+                      <PrivateRoute path="/logged/inquiry" component={InquiryView}/>
                       <GuestRoute path='/signup/success' component={SignUpSuccessView} />
                       <GuestRoute path='/logout' component={LogoutView} />
                       <GuestRoute exact path='/' component={GuestView} />

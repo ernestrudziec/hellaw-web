@@ -2,10 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/LawyerResponse/LawyerResponse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LawyerResponse/StyledLawyerResponse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hostadress.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/InquiryView/InquiryView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/InquiryView/StyledInquiryView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/GuestRoute/GuestRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Inquiry/Inquiry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry/Inquiry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Inquiry/StyledInquiry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry/StyledInquiry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,15 +78,15 @@
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/components/Inquiry" />
       <recent name="$PROJECT_DIR$/src/views/DesktopView/components" />
       <recent name="$PROJECT_DIR$/src/views/GuestView/StyledComponents" />
       <recent name="$PROJECT_DIR$/src/views/GuestView/Hero" />
-      <recent name="$PROJECT_DIR$/src/components/Navigation/components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/LoadingSpinners/SmallSpinner" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -127,7 +136,7 @@
       <workItem from="1587238195138" duration="1313000" />
       <workItem from="1587671810551" duration="26692000" />
       <workItem from="1588242363918" duration="682000" />
-      <workItem from="1588251641474" duration="6082000" />
+      <workItem from="1588251641474" duration="18810000" />
     </task>
     <servers />
   </component>

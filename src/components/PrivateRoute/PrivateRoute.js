@@ -5,13 +5,14 @@ import axios from "axios";
 import Cookie from 'js-cookie';
 import BeforeUserAuthSpinner
     from "../LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner";
+import {apiurl} from "../../hostadress";
 
 let headers = {
     "Content-Type" : "application/json"
 };
 
 const hellaw = axios.create({
-    baseURL: 'https://hellaw.eu/',
+    baseURL: apiurl,
     headers: headers
 
 });

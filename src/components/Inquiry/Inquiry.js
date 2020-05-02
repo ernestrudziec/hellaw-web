@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {
     StyledInquiryCategory,
     StyledInquiryDescription, StyledInquiryResponses,
@@ -10,8 +10,18 @@ import {
     StyledInquiryDescriptionTop,
     StyledShowMoreButton
 } from "./StyledInquiry";
+import {Redirect} from "react-router";
+import Cookie from 'js-cookie';
 
-function truncateString(str, length, truncate) {
+import {connect} from "react-redux";
+import {
+    getInquiriesAction, getInquiryByIdAction,
+    getUserInfoAction
+} from "../../actions";
+import {Link} from "react-router-dom";
+import history from "../../history";
+
+const truncateString = (str, length, truncate) => {
 
     if(truncate){
 
@@ -28,34 +38,75 @@ function truncateString(str, length, truncate) {
 }
 
 
-const Inquiry = ({ category, description, id, photos, premiumStatus, responses, title, isTruncated, key}) => {
+
+
+
+const Inquiry = ({ exactInquiryView, exactInquiry, isExactInquiryLoaded, category, description, id, photos, premiumStatus, responses, title, isTruncated, key, getInquiryById}) => {
+
+    const handleReplyClick = () => {
+        history.push(`/logged/inquiry/${id}`)
+    };
 
     const [isInquiryExpanded, setInquiryExpand] = useState(false);
 
+    if(!exactInquiryView) {
 
-    return (
-        <StyledInquiryWrapper key={key} id={id}>
+        return (
+            <StyledInquiryWrapper key={key} id={id}>
 
-            <StyledInquiryHeader>
-            <StyledInquiryTitle> {title} </StyledInquiryTitle>
-            <StyledInquiryCategory>{category}</StyledInquiryCategory>
-            </StyledInquiryHeader>
+                <StyledInquiryHeader>
+                    <StyledInquiryTitle> {title} </StyledInquiryTitle>
+                    <StyledInquiryCategory>{category}</StyledInquiryCategory>
+                </StyledInquiryHeader>
 
-            <StyledInquiryDescription>
-                <StyledInquiryDescriptionTop>
-                <StyledInquiryResponses>Odpowiedzi: {responses}</StyledInquiryResponses>
-                    <StyledShowMoreButton onClick={() => setInquiryExpand(!isInquiryExpanded)}><div className="fas fa-caret-down"></div></StyledShowMoreButton>
-                </StyledInquiryDescriptionTop>
+                <StyledInquiryDescription>
+                    <StyledInquiryDescriptionTop>
+                        <StyledInquiryResponses>Odpowiedzi: {responses}</StyledInquiryResponses>
+                        <StyledShowMoreButton
+                            onClick={() => setInquiryExpand(!isInquiryExpanded)}>
+                            <div
+                                className="fas fa-caret-down"></div>
+                        </StyledShowMoreButton>
+                    </StyledInquiryDescriptionTop>
 
-                {truncateString(description, 100, !isInquiryExpanded)}
-            </StyledInquiryDescription>
+                    {truncateString(description, 100, !isInquiryExpanded)}
+                </StyledInquiryDescription>
 
-            <StyledInquiryBottom>
-            <StyledReplyInquiryButton>Odpowiedz</StyledReplyInquiryButton>
-            </StyledInquiryBottom>
+                <StyledInquiryBottom>
 
-        </StyledInquiryWrapper>
-    );
+                        <StyledReplyInquiryButton onClick={handleReplyClick}> Odpowiedz </StyledReplyInquiryButton>
+                </StyledInquiryBottom>
+
+            </StyledInquiryWrapper>
+        );
+    } else {
+
+        return (
+            <StyledInquiryWrapper exact>
+                <StyledInquiryTitle exact>
+                    {title}
+                </StyledInquiryTitle>
+                <StyledInquiryDescription exact>
+                    {description}
+                </StyledInquiryDescription>
+
+
+
+            </StyledInquiryWrapper>
+        );
+    }
+
+
+
+
+
 };
 
-export default Inquiry;
+const mapDispatchToProps = dispatch => ({
+    getInquiryById: (access, id) => dispatch(getInquiryByIdAction(access, id))
+});
+
+const mapStateToProps = ({exactInquiry, isExactInquiryLoaded}) => ({exactInquiry, isExactInquiryLoaded});
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Inquiry);

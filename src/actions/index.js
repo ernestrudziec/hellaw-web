@@ -2,13 +2,14 @@
 import Cookie from 'js-cookie';
 import axios from 'axios';
 import history from "../history";
+import { apiurl } from '../hostadress';
 
 let headers = {
     "Content-Type" : "application/json"
 };
 
 const hellaw = axios.create({
-    baseURL: 'https://hellaw.eu/',
+    baseURL: apiurl,
     headers: headers
 
 });
@@ -31,6 +32,8 @@ const hellaw = axios.create({
 export const authenticateAction = (email, password) => dispatch => {
 
     dispatch({type: 'AUTHENTICATE_REQUEST'});
+
+
 
     return hellaw
         .post('auth/jwt/create/',{"email": email, "password": password })
@@ -107,8 +110,6 @@ export const getInquiriesAction = (access) => dispatch => {
         });
 };
 
-
-
 export const signUpAction = (email, password, isLawyer) => dispatch => {
 
     console.log('sign up!');
@@ -129,6 +130,28 @@ export const signUpAction = (email, password, isLawyer) => dispatch => {
         })
         .catch(err => {
             dispatch({type: 'SIGN_UP_FAILURE'});
+            console.log(err);
+        });
+};
+
+export const getInquiryByIdAction = (access, id) => dispatch => {
+
+
+
+    dispatch({type: 'GET_INQUIRY_BY_ID_REQUEST'});
+
+    return hellaw
+        .get(`/api/inquiries/${id}`, {headers: {
+                'Authorization': `Bearer ${access}`
+            }})
+        .then(payload => {
+
+            dispatch({type: 'GET_INQUIRY_BY_ID_SUCCESS', payload});
+            console.log(payload.data[0]);
+
+
+        })
+        .catch(err => {
             console.log(err);
         });
 };
