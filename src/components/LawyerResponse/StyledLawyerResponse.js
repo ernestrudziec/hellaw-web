@@ -11,7 +11,9 @@ font-size: 1.6rem;
 width: 90vw;
 max-width: 600px;
 border-radius: 10px;
-
+background: #DDDDDD;
+position: relative;
+z-index: -3;
 padding: 1em;
 margin-bottom: 2em;
 box-shadow: 0 10px 20px rgba(0,0,0,0.12), 0 6px 6px rgba(0,0,0,0.01);
@@ -85,6 +87,11 @@ height: 7em;
 export const StyledResponseContent = styled.p`
 width: 100%;
 padding: 1em;
+background: white;
+
+border-left:  solid 10px #252525;
+
+border-radius: 5px;
 
 
 `;
@@ -98,12 +105,13 @@ align-self: flex-end;
 export const StyledBestResponse = styled.div`
 
 
-font-size: 1.4em;
+font-size: 1.2em;
 background: gold;
 color: #131313;
 
 border-radius: 5px;
 padding: 0.5em 1em;
+margin-bottom: 1.5em;
 
 i{
 margin-left: 0.2em;

@@ -13,12 +13,34 @@ const initialState = {
     isUserInfoFetched: false,
     isUserSignUpPosted: true,
     allInquiries: null,
+    isNavExpanded: false,
+
 
 };
 
 const rootReducer = (state = initialState, action) => {
 
     switch(action.type) {
+
+
+
+        case ('CLOSE_NAV'): {
+
+
+            return {
+                ...state,
+                isNavExpanded: false
+            }
+        }
+
+        case ('EXPAND_NAV'): {
+
+
+            return {
+                ...state,
+                isNavExpanded: true
+            }
+        }
 
         case ('AUTHENTICATE_SUCCESS'): {
             // localStorage.setItem('access', action.payload.data.access);
@@ -44,7 +66,6 @@ const rootReducer = (state = initialState, action) => {
                 error: true,
             };
 
-
         case('TOKEN_VALID'):
             return {
                 ...state,
@@ -63,7 +84,7 @@ const rootReducer = (state = initialState, action) => {
             // console.log("Logout!");
             // console.log(localStorage);
             // console.log(Cookie.get());
-
+            history.push('/logout');
 
             return {
 
@@ -161,6 +182,7 @@ const rootReducer = (state = initialState, action) => {
                 ...state
             }
         }
+
 
 
     }

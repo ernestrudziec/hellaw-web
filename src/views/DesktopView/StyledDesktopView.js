@@ -10,7 +10,7 @@ display: flex;
 justify-content: flex-start;
 align-items: center;
 flex-direction: column;
-padding: 1em 0;
+padding-top: 40px;
 
 nav{
 display: flex;

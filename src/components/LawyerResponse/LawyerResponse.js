@@ -35,14 +35,15 @@ const LawyerResponse = ({index, content, date, isBest, lawyerID, lawyerName, id 
 
         <StyledLawyerResponse id={id}>
 
-            {
-                best ? <StyledBestResponse>Najlepsza odpowiedź <i className="fas fa-check"></i></StyledBestResponse> : null
-            }
+
         <StyledLawyerInfo bg={finalImg} id={lawyerID}>
             <StyledLawyerName>{lawyerName}</StyledLawyerName>
             <StyledLawyerAvatar src={finalImg}/>
         </StyledLawyerInfo>
             <StyledResponseContent>
+                {
+                    best ? <StyledBestResponse>Najlepsza odpowiedź <i className="fas fa-check"></i></StyledBestResponse> : null
+                }
                 {content}
             </StyledResponseContent>
             <StyledResponseDate>

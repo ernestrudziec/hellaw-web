@@ -6,6 +6,8 @@ import Cookie from 'js-cookie';
 import BeforeUserAuthSpinner
     from "../LoadingSpinners/BeforeUserAuthSpinner/BeforeUserAuthSpinner";
 import {apiurl} from "../../hostadress";
+import store from "../../store";
+import Navigation from "../Navigation/Navigation";
 
 let headers = {
     "Content-Type" : "application/json"
@@ -62,11 +64,20 @@ export const PrivateRoute = ({ component: Component, ...rest }) => {
 
     }, []);
 
-    if (!isTokenValidated) return <BeforeUserAuthSpinner/>; // or
-        // some kind of loading animation
+    if (!isTokenValidated) return <BeforeUserAuthSpinner/>; {
 
-    return (<Route {...rest}
-                   render={(props) => {
-                       return auth ? <Component {...props} /> : <Redirect to="/login" />
-                   }} />)
+
+
+        return (<Route {...rest}
+                       render={(props) => {
+                           return auth ? (
+                               <>
+                               <Navigation/>
+                               <Component {...props} />
+                               </>
+                           ) : <Redirect to="/login" />
+                       }} />)
+    }
+
+
 }

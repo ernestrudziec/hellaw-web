@@ -33,7 +33,6 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
         getUserInfo(Cookie.get('access'));
         getAllInquiries(Cookie.get('access'));
 
-
     }, []);
 
     useEffect(() => {
@@ -41,12 +40,11 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
     });
 
     return (
+
         <StyledDesktopView>
 
-            <nav>
-            <Logo dark/>
-            <Link to='/logout'> <StyledButton logout onClick={() => { store.dispatch({type: 'LOGOUT_USER'});}}> Wyloguj się <span className="fas fa-sign-out-alt"/> </StyledButton></Link>
-            </nav>
+
+
 
    <UserInfo userID={userID} isLawyer={isLawyer} userEmail={userEmail} />
 
@@ -54,7 +52,7 @@ const DesktopView = ({getUserInfo, userID, isLawyer, userEmail, isUserInfoFetche
             {
                 allInquiries ?
                 allInquiries.map((data, i) => {
-                    if(i > 3 && i < 6)
+                    if(i > 3 && i < 12)
                     return(
                         <>
                         <Inquiry key={data.id + "key"}

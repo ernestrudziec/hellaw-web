@@ -27,10 +27,11 @@ import BeforeUserAuthSpinner from './components/LoadingSpinners/BeforeUserAuthSp
 import SignUpSuccessView
     from "./views/SignUpView/components/SignUpSuccessView";
 import InquiryView from "./views/InquiryView/InquiryView";
+import Navigation from "./components/Navigation/Navigation";
 
 // console.log('index: ');
 // console.log(localStorage);
-console.log(Cookie.get());
+// console.log(Cookie.get());
 //
 // const access = localStorage.getItem('access');
 // if (access) {
@@ -49,7 +50,11 @@ ReactDOM.render(
 
               <ThemeProvider theme={theme}>
 
+                  {store.getState().isNavVisible ? <Navigation/> : null}
+
+
                   <Switch>
+
                       <PrivateRoute path="/logged/inquiry" component={InquiryView}/>
                       <GuestRoute path='/signup/success' component={SignUpSuccessView} />
                       <GuestRoute path='/logout' component={LogoutView} />

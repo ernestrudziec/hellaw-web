@@ -12,6 +12,19 @@ import AboutSection from "./AboutSection/AboutSection";
 import { Link } from "react-router-dom";
 import {Redirect} from "react-router-dom";
 
+import Logo from "../../components/Logo/Logo";
+import styled from "styled-components";
+
+export const StyledNavigation = styled.nav`
+width: 85%;
+max-width: 1000px;
+height: 20%;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+`;
 
 const GuestView = () => {
 
@@ -21,7 +34,18 @@ const GuestView = () => {
     return (
 <>
         <StyledHeroMain>
-            <Navigation/>
+
+            <StyledNavigation>
+
+                <Logo white/>
+                <Link to='/login'>
+                    <StyledButton login>
+                        Zaloguj się <span className="fas fa-sign-in-alt"/>
+                    </StyledButton>
+                </Link>
+
+            </StyledNavigation>
+
            <StyledSection>
 
                <h1>Setki radców prawnych gotowych udzielić Ci szybkiej odpowiedzi.</h1>

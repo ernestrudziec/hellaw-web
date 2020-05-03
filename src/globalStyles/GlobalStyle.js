@@ -9,7 +9,8 @@ const GlobalStyles = createGlobalStyle`
 
 body, html{
 
-font-family: 'Baloo 2', sans-serif;
+font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+
 color: black;
 padding: 0;
 margin: 0;
@@ -17,13 +18,12 @@ margin: 0;
 }
 
 html{
-
 font-size: 62.5%;
 
 }
 
 *, *::before, *::after{
--webkit-font-smoothing: antialiased;
+-webkit-font-smoothing: antialiased !important;
 box-sizing: border-box;
 
 
