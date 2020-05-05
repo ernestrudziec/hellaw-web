@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 const StyledSignUpForm = styled.form`
 
@@ -8,10 +8,7 @@ justify-content: flex-start;
 align-items: center;
 flex-direction: column;
 width: 90%;
-
 max-width: 350px;
-
-
 
 div{
 position: relative;
@@ -33,7 +30,6 @@ outline: none;
 padding: 0 1em;
 padding-top: 1em;
 font-weight: 600;
-font-family: 'Baloo 2', sans-serif;
 box-shadow: 0 19px 38px rgba(0,0,0,0.1), 0 15px 12px rgba(0,0,0,0.05);
 
 }
@@ -43,7 +39,7 @@ label{
 font-size: 1.5em;
 position: absolute;
 left: 1em;
-font-family: 'Baloo 2', sans-serif;
+
 
 }
 
@@ -76,8 +72,6 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-
-
 input:not(placeholder-shown) + label,
 input:focus + label {
  transform-origin: left bottom;
@@ -89,8 +83,6 @@ input:focus + label {
 
 
 }
-
-
 
 
 h4{

@@ -2,19 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="011c72ea-c666-4b5d-b11e-73e5bc94adeb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hooks/useSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hooks/useSignUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Input.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Inquiry/Inquiry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry/Inquiry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Inquiry/StyledInquiry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Inquiry/StyledInquiry.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LawyerResponse/LawyerResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LawyerResponse/LawyerResponse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LawyerResponse/StyledLawyerResponse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LawyerResponse/StyledLawyerResponse.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/StyledComponents/StyledNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/StyledComponents/StyledNavigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PrivateRoute/PrivateRoute.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fonts.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/fonts.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledButton/StyledButton.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StyledComponents/StyledInput/StyledInput.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StyledComponents/StyledInput/StyledInput.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/globalStyles/GlobalStyle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/DesktopView.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/DesktopView/StyledDesktopView.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/GuestView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/GuestView.stories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/GuestView.stories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/Hero/components/StyledHeroMain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/Hero/components/StyledHeroMain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledSection.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/GuestView/StyledComponents/StyledSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/InquiryView/InquiryView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/InquiryView/InquiryView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView/LoginView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/LoginView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/LoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/LoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LoginView/components/StyledLoginView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LogoutView/LogoutView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/SignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/SignUpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSignUpView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSwitch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/StyledComponents/StyledSwitch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpForm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpSuccessView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/SignUpSuccessView.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/SignUpView/components/StyledSignUpForm.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +81,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -75,7 +100,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -136,7 +161,7 @@
       <workItem from="1587238195138" duration="1313000" />
       <workItem from="1587671810551" duration="26692000" />
       <workItem from="1588242363918" duration="682000" />
-      <workItem from="1588251641474" duration="36402000" />
+      <workItem from="1588251641474" duration="41492000" />
     </task>
     <servers />
   </component>
@@ -183,34 +208,38 @@
     <state x="405" y="260" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.963@0.23.1680.963" timestamp="1587677696723" />
     <state x="405" y="261" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.969@0.23.1680.969" timestamp="1586289066937" />
     <state x="405" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1680.972@0.23.1680.972" timestamp="1586728950642" />
-    <state width="928" height="-12" key="GridCell.Tab.0.bottom" timestamp="1588456397005">
+    <state x="831" y="265" width="667" height="653" key="EditFileWatcherDialog" timestamp="1588693090856">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="928" height="-12" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1588456397005" />
+    <state x="831" y="265" width="667" height="653" key="EditFileWatcherDialog/0.23.1680.963@0.23.1680.963" timestamp="1588693090856" />
+    <state width="867" height="-12" key="GridCell.Tab.0.bottom" timestamp="1588691522476">
+      <screen x="0" y="23" width="1680" height="963" />
+    </state>
+    <state width="867" height="-12" key="GridCell.Tab.0.bottom/0.23.1680.963@0.23.1680.963" timestamp="1588691522476" />
     <state width="654" height="225" key="GridCell.Tab.0.bottom/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.bottom/0.23.1680.969@0.23.1680.969" timestamp="1586287597999" />
     <state width="902" height="225" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1586731838511" />
     <state width="986" height="225" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1586776549214" />
-    <state width="928" height="-12" key="GridCell.Tab.0.center" timestamp="1588456397005">
+    <state width="867" height="-12" key="GridCell.Tab.0.center" timestamp="1588691522475">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="928" height="-12" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1588456397005" />
+    <state width="867" height="-12" key="GridCell.Tab.0.center/0.23.1680.963@0.23.1680.963" timestamp="1588691522475" />
     <state width="654" height="225" key="GridCell.Tab.0.center/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.center/0.23.1680.969@0.23.1680.969" timestamp="1586287597996" />
     <state width="902" height="225" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1586731838510" />
     <state width="986" height="225" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1586776549213" />
-    <state width="928" height="-12" key="GridCell.Tab.0.left" timestamp="1588456397004">
+    <state width="867" height="-12" key="GridCell.Tab.0.left" timestamp="1588691522474">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="928" height="-12" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1588456397004" />
+    <state width="867" height="-12" key="GridCell.Tab.0.left/0.23.1680.963@0.23.1680.963" timestamp="1588691522474" />
     <state width="654" height="225" key="GridCell.Tab.0.left/0.23.1680.966@0.23.1680.966" timestamp="1586708950913" />
     <state width="916" height="235" key="GridCell.Tab.0.left/0.23.1680.969@0.23.1680.969" timestamp="1586287597995" />
     <state width="902" height="225" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1586731838510" />
     <state width="986" height="225" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1586776549213" />
-    <state width="928" height="-12" key="GridCell.Tab.0.right" timestamp="1588456397005">
+    <state width="867" height="-12" key="GridCell.Tab.0.right" timestamp="1588691522476">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state width="928" height="-12" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1588456397005" />
+    <state width="867" height="-12" key="GridCell.Tab.0.right/0.23.1680.963@0.23.1680.963" timestamp="1588691522476" />
     <state width="654" height="225" key="GridCell.Tab.0.right/0.23.1680.966@0.23.1680.966" timestamp="1586708950914" />
     <state width="916" height="235" key="GridCell.Tab.0.right/0.23.1680.969@0.23.1680.969" timestamp="1586287597998" />
     <state width="902" height="225" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1586731838511" />
@@ -263,10 +292,10 @@
       <screen x="0" y="23" width="1680" height="969" />
     </state>
     <state width="1010" height="282" key="GridCell.Tab.3.right/0.23.1680.969@0.23.1680.969" timestamp="1586083324010" />
-    <state x="194" y="204" width="939" height="875" key="SettingsEditor" timestamp="1587815571091">
+    <state x="722" y="157" width="900" height="702" key="SettingsEditor" timestamp="1588693817938">
       <screen x="0" y="23" width="1680" height="963" />
     </state>
-    <state x="194" y="204" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1587815571091" />
+    <state x="722" y="157" width="900" height="702" key="SettingsEditor/0.23.1680.963@0.23.1680.963" timestamp="1588693817938" />
     <state x="730" y="116" width="939" height="875" key="SettingsEditor/0.23.1680.969@0.23.1680.969" timestamp="1586103849599" />
     <state width="625" height="498" key="SwitcherDM" timestamp="1587890605848">
       <screen x="0" y="23" width="1680" height="963" />

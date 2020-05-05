@@ -20,18 +20,17 @@ max-width: 500px;
 padding: 0;
 
 margin-top: 0;
-font-size: 2.5em;
-font-family: Oxanium, sans-serif;
+font-size: 2.6em;
 
 @media (max-width: 330px){
-font-size: 2em;
+font-size: 1.6em;
 }
 
 }
 
 h2{
 
-font-size: 1.5em;
+font-size: 16px;
 font-weight: 300;
 
 }
@@ -50,7 +49,7 @@ text-decoration: underline;
 h3{
 margin-top: 1em;
 margin-left: 5px;
-font-size: 1.5em;
+font-size: 1.4em;
 font-weight: 300;
 color: gray;
 
@@ -88,13 +87,14 @@ text-decoration: underline;
    h1{
    margin: 1em 0;
    max-width: 800px;
+   font-weight: 600;
    
    strong{
    background: #DBFF00;
    padding: 0.2em 0.4em;
    font-size: 1em;
    display: inline-block;
-  
+  font-weight: 800;
    border-radius: 5px;
    }
    }

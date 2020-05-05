@@ -1,11 +1,10 @@
-import React from 'react';
-import styled, { css } from 'styled-components';
-
+import React from "react";
+import styled, { css } from "styled-components";
 
 const StyledButton = styled.button`
 
-  width: ${({width}) => width || "auto"};
-  height: ${({height}) => height || "50px"};
+  width: ${({ width }) => width || "auto"};
+  height: ${({ height }) => height || "50px"};
   padding: 0 0.5em;
   color: white;
   background: #131313;
@@ -13,11 +12,10 @@ const StyledButton = styled.button`
   cursor: pointer;
   transition: 0.3s ease-in-out;
   border: none;
-  box-sizing: border-box;
-  font-family: Oxanium, sans-serif;
+  box-sizing: border-box; 
   outline: none;
-  font-size: ${({fontsize}) => fontsize || "2rem"};
-  font-weight: 600;
+  font-size: ${({ fontsize }) => fontsize || "2rem"};
+  font-weight: 700;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -29,58 +27,43 @@ const StyledButton = styled.button`
 
   }
  
-
+ ${({ yellow }) =>
+   yellow &&
+   css`
+     background: #dbff00;
+     color: #131313;
+     border: none;
+   `}
  
- ${({yellow}) => yellow &&
-    css`
-      background: #DBFF00;
-      color: #131313;
-      border: none;
-        
-      
-      
-     `}
- 
-  ${({login}) => login &&
+  ${({ login }) =>
+    login &&
     css`
       background: white;
       color: #131313;
-      width:  130px;
+      width: 130px;
       height: 30px;
       border-radius: 5px;
       font-size: 1.4rem;
-      
-      
+    `}
  
-      
-      
-      
-     `}
- 
-  ${({isDisabled}) => isDisabled &&
+  ${({ isDisabled }) =>
+    isDisabled &&
     css`
       pointer-events: none;
       opacity: 0.3;
+    `}
   
-     `}
-  
-  ${({logout}) => logout &&
+  ${({ logout }) =>
+    logout &&
     css`
-          background: #131313;
+      background: #131313;
       color: white;
-      width:  130px;
+      width: 130px;
       height: 30px;
       border-radius: 5px;
       font-size: 1.4rem;
-  
-     `}
+    `}
  
 `;
-
-
-
-
-
-
 
 export default StyledButton;
